@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Tâm Y Dung</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.cdnfonts.com/css/roslindale" rel="stylesheet">
+   <link rel="shortcut icon" href="./assets/images/icons/favicon.ico" type="image/x-icon">
+
+
+   <link rel="stylesheet" href="./assets/css/fonts.css" />
+   <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+   <link rel="stylesheet" href="./assets/css/lite-youtube.css">
+   <link rel="stylesheet" href="./assets/css/reset.css" />
+   <link rel="stylesheet" href="./assets/css/base.css" />
+   <link rel="stylesheet" href="./assets/css/grid.css" />
+   <link rel="stylesheet" href="./assets/css/keyframes.css">
+   <link rel="stylesheet" href="./assets/css/style.css" />
+   <link rel="stylesheet" href="./assets/css/reponsive.css" />
+
+</head>
+
+<body>
+   <div class="app">
+      <!-- Header -->
+      <header class="header">
+         <div class="container header-wrapper inner-wrapper">
+            <div class="logo-tyd">
+               <a href="/">
+                  <img class="logo-tyd__img" src="./assets/images/logo/logo.svg" alt="logo" />
+               </a>
+            </div>
+            <div class="header-nav">
+               <ul class="header-nav__list">
+                  <li class="header-nav__item">
+                     <a href="/" title="Home" class="header-nav__link">Home</a>
+                  </li>
+                  <li class="header-nav__item">
+                     <a href="/dich-vu.html" title="Dịch vụ" class="header-nav__link">Dịch vụ</a>
+                     <ul class="header-subnav__list">
+                        <li class="header-subnav__item">
+                           <a href="dich-vu.html">Chăm sóc da</a>
+                           <img src="./assets/images/icons/arrow-nav.svg" alt="">
+                           <ul class="subnav-item__list">
+                              <li class="subnav-item__item">
+                                 <a href="dich-vu.html?tab=1">Điêu khắc làn da</a>
+                              </li>
+                              <li class="subnav-item__item">
+                                 <a href="dich-vu.html?tab=4">Nâng cơ xóa nếp nhăn</a>
+                              </li>
+                              <li class="subnav-item__item">
+                                 <a href="dich-vu.html?tab=5">Thông tắc cơ mặt</a>
+                              </li>
+                              <li class="subnav-item__item">
+                                 <a href="dich-vu.html?tab=2">Massage mặt</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="header-subnav__item">
+                           <a href="dich-vu.html">Chăm sóc sức khỏe</a>
+                           <img src="./assets/images/icons/arrow-nav.svg" alt="">
+                        </li>
+                        <li class="header-subnav__item">
+                           <a href="dich-vu.html">Chăm sóc tóc</a>
+                           <img src="./assets/images/icons/arrow-nav.svg" alt="">
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="header-nav__item">
+                     <a href="/blog.html" title="Blog" class="header-nav__link">Blog</a>
+                  </li>
+                  <li class="header-nav__item">
+                     <a href="/hoat-dong.html" title="Hoạt động" class="header-nav__link">Hoạt động</a>
+                  </li>
+                  <li class="header-nav__item">
+                     <a href="/lien-he.html" title="Liên hệ" class="header-nav__link">Liên hệ</a>
+                  </li>
+               </ul>
+               <a href="tel:090 638 6941" title="Đặt lịch chăm sóc" class="header-nav__link hide-mobile hide-tablet">
+                  <button class="header-nav__btn btn primary">
+                     Đặt lịch chăm sóc
+                  </button>
+               </a>
+            </div>
+            <div class="header-menu__icon hidden">
+               <img class="header-menu_img" src="./assets/images/icons/menu.svg" alt="menu-icon">
+            </div>
+         </div>
+      </header>
+      <!-- end Header -->
+
+      <!-- Banner -->
+      <div class="banner">
+         <div class="container banner-wrapper">
+            <img class="banner-img" src="./assets/images/banner/tyd-banner.png" alt="tyd-banner">
+            <h1 class="banner-title banner-title__left">Nâng tầm nhận thức</h1>
+            <h1 class="banner-title banner-title__right">Về sức khỏe & sắc đẹp</h1>
+         </div>
+      </div>
+      <!-- end Banner -->
+
+      <!-- Introduce -->
+      <div class="introduce">
+         <div class="container introduce-wrapper">
+            <h1 class="introduce-title">
+               We are a full-service dermatology centre based in Toronto focused on evidence-based treatment of your
+               skin.
+            </h1>
+            <img class="introduce-img" src="./assets/images/banner/introduce.png" alt="introduce">
+         </div>
+      </div>
+      <!-- end Introduce -->
+
+      <!-- Carosel -->
+      <div class="carosel">
+         <div class="container carosel-wrapper inner-wrapper">
+            <div class="carosel-title">
+               <h1 class="carosel-title__item black">Dịch vụ</h1>
+               <h1 class="carosel-title__item blue">chăm sóc da</h1>
+            </div>
+            <div class="swiper tyd-swiper">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="swiper-slide__item">
+                        <div class="swiper-slide__img"
+                           style="background-image: url('../assets/images/carosel/carosel-img-1.png');"></div>
+                        <h1 class="swiper-slide__title">Điêu khắc<br />làn da</h1>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                     <div class="swiper-slide__item">
+                        <div class="swiper-slide__img"
+                           style="background-image: url('../assets/images/carosel/carosel-img-1.png');"></div>
+                        <h1 class="swiper-slide__title">Thông tắc<br />cơ mặt</h1>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                     <div class="swiper-slide__item">
+                        <div class="swiper-slide__img"
+                           style="background-image: url('../assets/images/carosel/carosel-img-1.png');"></div>
+                        <h1 class="swiper-slide__title">Nâng cơ<br />xóa nếp nhăn</h1>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                     <div class="swiper-slide__item">
+                        <div class="swiper-slide__img"
+                           style="background-image: url('../assets/images/carosel/carosel-img-1.png');"></div>
+                        <h1 class="swiper-slide__title">Nâng cơ<br />xóa nếp nhăn</h1>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="swiper-slide__item">
+                        <div class="swiper-slide__img"
+                           style="background-image: url('../assets/images/carosel/carosel-img-1.png');"></div>
+                        <h1 class="swiper-slide__title">Điêu khắc<br />làn da</h1>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper__button-next">
+               <img src="./assets/images/icons/left-arrow.svg" alt="arrow-left">
+            </div>
+            <div class="swiper__button-prev">
+               <img src="./assets/images/icons/right-arrow.svg" alt="arrow-right">
+            </div>
+         </div>
+      </div>
+      <!-- end Carosel -->
+
+      <!-- Video slider -->
+      <div class="video-carosel">
+         <div class="container carosel-wrapper inner-wrapper video-carosel__container">
+            <div class="swiper tyd-video-slider">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="video-slider__item">
+                        <div class="video-slider__left">
+                           <div class="video-container">
+                              <img src="./assets/images/video-thumbnail/video-1.jpg" class="video-slider__src"
+                                 data-video-id="7E5kmdKAyl0" width="100%"
+                                 style="aspect-ratio: 16/9; border-radius: 15px; object-fit: cover;" />
+                              <button class="video-control" data-video-id="7E5kmdKAyl0">
+                                 <span class="video-control-play">
+                                    <span class="video-control-symbol" aria-hidden="true">
+                                       <img src="./assets/images/icons/play.png" alt="">
+                                    </span>
+                                 </span>
+                              </button>
+                           </div>
+                        </div>
+                        <div class="video-slider__right">
+                           <div class="video-slider__title">
+                              <h1 class="slider-title__top">Câu chuyện</h1>
+                              <h1 class="slider-title__botom">từ khách hàng</h1>
+                           </div>
+                           <div class="video-slider__desc">
+                              <p class="slider-desc__score">9/10</p>
+                              <h1 class="slider-desc__name">Bob Iger</h1>
+                              <p class="slider-desc__detail">Dịch vụ Chăm sóc xương khớp</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="video-slider__item">
+                        <div class="video-slider__left">
+                           <div class="video-container">
+                              <img src="./assets/images/video-thumbnail/video-2.jpg" class="video-slider__src"
+                                 data-video-id="0Qeix_o6erc" width="100%"
+                                 style="aspect-ratio: 16/9; border-radius: 15px; object-fit: cover;" />
+                              <button class="video-control" data-video-id="0Qeix_o6erc">
+                                 <span class="video-control-play">
+                                    <span class="video-control-symbol" aria-hidden="true">
+                                       <img src="./assets/images/icons/play.png" alt="">
+                                    </span>
+                                 </span>
+                              </button>
+                           </div>
+                        </div>
+                        <div class="video-slider__right">
+                           <div class="video-slider__title">
+                              <h1 class="slider-title__top">Câu chuyện</h1>
+                              <h1 class="slider-title__botom">từ khách hàng</h1>
+                           </div>
+                           <div class="video-slider__desc">
+                              <p class="slider-desc__score">9/10</p>
+                              <h1 class="slider-desc__name">Bob Iger</h1>
+                              <p class="slider-desc__detail">Dịch vụ Chăm sóc xương khớp</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="video-slider__item">
+                        <div class="video-slider__left">
+                           <div class="video-container">
+                              <img src="./assets/images/video-thumbnail/video-3.jpg" class="video-slider__src"
+                                 data-video-id="_6V49LBfymA" width="100%"
+                                 style="aspect-ratio: 16/9; border-radius: 15px; object-fit: cover;" />
+                              <button class="video-control" data-video-id="_6V49LBfymA">
+                                 <span class="video-control-play">
+                                    <span class="video-control-symbol" aria-hidden="true">
+                                       <img src="./assets/images/icons/play.png" alt="">
+                                    </span>
+                                 </span>
+                              </button>
+                           </div>
+                        </div>
+                        <div class="video-slider__right">
+                           <div class="video-slider__title">
+                              <h1 class="slider-title__top">Câu chuyện</h1>
+                              <h1 class="slider-title__botom">từ khách hàng</h1>
+                           </div>
+                           <div class="video-slider__desc">
+                              <p class="slider-desc__score">9/10</p>
+                              <h1 class="slider-desc__name">Bob Iger</h1>
+                              <p class="slider-desc__detail">Dịch vụ Chăm sóc xương khớp</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="video-slider__item">
+                        <div class="video-slider__left">
+                           <div class="video-container">
+                              <img src="./assets/images/video-thumbnail/video-4.jpg" class="video-slider__src"
+                                 data-video-id="61hf879i1dA" width="100%"
+                                 style="aspect-ratio: 16/9; border-radius: 15px; object-fit: cover;" />
+                              <button class="video-control" data-video-id="61hf879i1dA">
+                                 <span class="video-control-play">
+                                    <span class="video-control-symbol" aria-hidden="true">
+                                       <img src="./assets/images/icons/play.png" alt="">
+                                    </span>
+                                 </span>
+                              </button>
+                           </div>
+                        </div>
+                        <div class="video-slider__right">
+                           <div class="video-slider__title">
+                              <h1 class="slider-title__top">Câu chuyện</h1>
+                              <h1 class="slider-title__botom">từ khách hàng</h1>
+                           </div>
+                           <div class="video-slider__desc">
+                              <p class="slider-desc__score">9/10</p>
+                              <h1 class="slider-desc__name">Bob Iger</h1>
+                              <p class="slider-desc__detail">Dịch vụ Chăm sóc xương khớp</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="container carosel-wrapper inner-wrapper video-carosel__container">
+               <div thumbsSlider="" class="swiper tyd-video-slider-thumb">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div class="video-slider__item">
+                           <div class="video-slider__left">
+                              <div class="video-container">
+                                 <img src="./assets/images/video-thumbnail/video-1.jpg" class="video-slider__src"
+                                    data-video-id="7E5kmdKAyl0" width="100%"
+                                    style="aspect-ratio: 16/9; border-radius: 15px; object-fit: cover;" />
+                                 <button class="video-control" data-video-id="7E5kmdKAyl0">
+                                    <span class="video-control-play">
+                                       <span class="video-control-symbol" aria-hidden="true">
+                                          <img src="./assets/images/icons/play.png" alt="">
+                                       </span>
+                                    </span>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="video-slider__right">
+                              <div class="video-slider__desc">
+                                 <h1 class="slider-desc__name">Bob Iger</h1>
+                                 <p class="slider-desc__detail">Dịch vụ Chăm sóc xương khớp</p>
+                                 <p class="slider-desc__score">9/10</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="video-slider__item">
+                           <div class="video-slider__left">
+                              <div class="video-container">
+                                 <img src="./assets/images/video-thumbnail/video-2.jpg" class="video-slider__src"
+                                    data-video-id="0Qeix_o6erc" width="100%"
+                                    style="aspect-ratio: 16/9; border-radius: 15px; object-fit: cover;" />
+                                 <button class="video-control" data-video-id="0Qeix_o6erc">
+                                    <span class="video-control-play">
+                                       <span class="video-control-symbol" aria-hidden="true">
+                                          <img src="./assets/images/icons/play.png" alt="">
+                                       </span>
+                                    </span>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="video-slider__right">
+                              <div class="video-slider__desc">
+                                 <h1 class="slider-desc__name">Bob Iger</h1>
+                                 <p class="slider-desc__detail">Dịch vụ Chăm sóc xương khớp</p>
+                                 <p class="slider-desc__score">9/10</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="video-slider__item">
+                           <div class="video-slider__left">
+                              <div class="video-container">
+                                 <img src="./assets/images/video-thumbnail/video-3.jpg" class="video-slider__src"
+                                    data-video-id="_6V49LBfymA" width="100%"
+                                    style="aspect-ratio: 16/9; border-radius: 15px; object-fit: cover;" />
+                                 <button class="video-control" data-video-id="_6V49LBfymA">
+                                    <span class="video-control-play">
+                                       <span class="video-control-symbol" aria-hidden="true">
+                                          <img src="./assets/images/icons/play.png" alt="">
+                                       </span>
+                                    </span>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="video-slider__right">
+                              <div class="video-slider__desc">
+                                 <h1 class="slider-desc__name">Bob Iger</h1>
+                                 <p class="slider-desc__detail">Dịch vụ Chăm sóc xương khớp</p>
+                                 <p class="slider-desc__score">9/10</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="video-slider__item">
+                           <div class="video-slider__left">
+                              <div class="video-container">
+                                 <img src="./assets/images/video-thumbnail/video-4.jpg" class="video-slider__src"
+                                    data-video-id="61hf879i1dA" width="100%"
+                                    style="aspect-ratio: 16/9; border-radius: 15px; object-fit: cover;" />
+                                 <button class="video-control" data-video-id="61hf879i1dA">
+                                    <span class="video-control-play">
+                                       <span class="video-control-symbol" aria-hidden="true">
+                                          <img src="./assets/images/icons/play.png" alt="">
+                                       </span>
+                                    </span>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="video-slider__right">
+                              <div class="video-slider__desc">
+                                 <h1 class="slider-desc__name">Bob Iger</h1>
+                                 <p class="slider-desc__detail">Dịch vụ Chăm sóc xương khớp</p>
+                                 <p class="slider-desc__score">9/10</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="thumb-swiper-button__next">
+                  <img src="./assets/images/icons/left-arrow.svg" alt="arrow-left">
+               </div>
+               <div class="thumb-swiper-button__prev">
+                  <img src="./assets/images/icons/right-arrow.svg" alt="arrow-right">
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end video slider -->
+
+      <!-- Branchs -->
+      <div class="branch">
+         <div class="container branch-wrapper" style="background-image: url('./assets/images/branch/branch-2.png');">
+            <div class="branch-title">
+               <h1 class="branch-title__top">Hệ thống</h1>
+               <h1 class="branch-title__bottom">chi nhánh</h1>
+            </div>
+            <div class="branch-body">
+               <ul class="branch-list">
+                  <li class="branch-item" data-background="./assets/images/branch/branch-1.png">
+                     <div class="branch-item__content">
+                        <div class="branch-item__left">
+                           <img src="./assets/images/icons/single-logo.svg" alt="">
+                        </div>
+                        <div class="branch-item__right">
+                           <p class="branch-item__name">TYD Thành Thái</p>
+                           <p class="branch-item__desc">TRUNG TÂM ĐÀO TẠO</p>
+                           <p class="branch-item__address">152/14 Thành Thái, P.12, Q. 10, TpHCM</p>
+                        </div>
+                        <div class="branch-item__arrow">
+                           <img class="arrow-item__img" src="./assets/images/icons/arrow.png" alt="">
+                        </div>
+                     </div>
+                  </li>
+                  <li class="branch-item active" data-background="./assets/images/branch/branch-2.png">
+                     <div class="branch-item__content">
+                        <div class="branch-item__left">
+                           <img src="./assets/images/icons/single-logo.svg" alt="">
+                        </div>
+                        <div class="branch-item__right">
+                           <p class="branch-item__name">TYD Trương Quốc Dung</p>
+                           <p class="branch-item__address">50A Trương Quốc Dung, P.10, Q. Phú Nhuận, TpHCM</p>
+                        </div>
+                        <div class="branch-item__arrow">
+                           <img class="arrow-item__img" src="./assets/images/icons/arrow.png" alt="">
+                        </div>
+                     </div>
+                  </li>
+                  <li class="branch-item" data-background="./assets/images/branch/branch-3.png">
+                     <div class="branch-item__content">
+                        <div class="branch-item__left">
+                           <img src="./assets/images/icons/single-logo.svg" alt="">
+                        </div>
+                        <div class="branch-item__right">
+                           <p class="branch-item__name">TYD Thủ Dầu Một</p>
+                           <p class="branch-item__address">50A Trương Quốc Dung, P.10, Q. Phú Nhuận, TpHCM</p>
+                        </div>
+                        <div class="branch-item__arrow">
+                           <img class="arrow-item__img" src="./assets/images/icons/arrow.png" alt="">
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="branch-mb">
+         <div class="container branch-wrapper">
+            <div class="branch-title">
+               <h1 class="branch-title__top">Hệ thống</h1>
+               <h1 class="branch-title__bottom">chi nhánh</h1>
+            </div>
+            <div class="branch-body">
+               <ul class="branch-list">
+                  <li class="branch-item" style="background-image: url('./assets/images/branch/branch-1.png');">
+                     <div class="branch-item__content">
+                        <div class="branch-item__top">
+                           <img class="branch-item__title" src="./assets/images/branch/tyd.png">
+                           <h2 class="branch-item__subTitle">Trương Quốc Dung</h>
+                        </div>
+                        <div class="branch-item__bottom">
+                           <img src="./assets/images/icons/single-logo.svg" alt="">
+                           <div class="branch-item__desc">
+                              <p class="branch-item__address">50A Trương Quốc Dung, P.10, Q. Phú Nhuận, TpHCM</p>
+                              <p class="branch-item__hotline">Hotline:</p>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="branch-item" style="background-image: url('./assets/images/branch/branch-2.png');">
+                     <div class="branch-item__content">
+                        <div class="branch-item__top">
+                           <img class="branch-item__title" src="./assets/images/branch/tyd.png">
+                           <h2 class="branch-item__subTitle">Trương Quốc Dung</h>
+                        </div>
+                        <div class="branch-item__bottom">
+                           <img src="./assets/images/icons/single-logo.svg" alt="">
+                           <div class="branch-item__desc">
+                              <p class="branch-item__address">50A Trương Quốc Dung, P.10, Q. Phú Nhuận, TpHCM</p>
+                              <p class="branch-item__hotline">Hotline:</p>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="branch-item" style="background-image: url('./assets/images/branch/branch-3.png');">
+                     <div class="branch-item__content">
+                        <div class="branch-item__top">
+                           <img class="branch-item__title" src="./assets/images/branch/tyd.png">
+                           <h2 class="branch-item__subTitle">Trương Quốc Dung</h>
+                        </div>
+                        <div class="branch-item__bottom">
+                           <img src="./assets/images/icons/single-logo.svg" alt="">
+                           <div class="branch-item__desc">
+                              <p class="branch-item__address">50A Trương Quốc Dung, P.10, Q. Phú Nhuận, TpHCM</p>
+                              <p class="branch-item__hotline">Hotline:</p>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- end Branchs -->
+
+      <!-- Blog -->
+      <div class="blog">
+         <div class="container blog-wrapper inner-wrapper">
+            <h1 class="blog-title title">Blog</h1>
+            <div class="blog-content">
+               <div class="blog-content__left">
+                  <img class="content-left__img" src="./assets/images/blog/blog-main.png" alt="">
+               </div>
+               <div class="blog-content__right">
+                  <h3 class="content-right__title">Twitter’s Business Shrinks, but Investors See a Glimmer of Hope</h3>
+                  <span class="content-right__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                     sint. Velit officia
+                     consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim
+                     mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                     velit mollit. Exercitation veniam consequat sunt nostrud amet.</span>
+                  <a href="blog.html" class="btn primary content-right__btn">
+                     Đọc tiếp
+                  </a>
+               </div>
+            </div>
+            <ul class="blog-list">
+               <li class="blog-item">
+                  <a href="blog.html" class="blog-item__link">
+                     <div class="blog-item__content"
+                        style="background-image: url('./assets/images/blog/blog-item-1.png');">
+                     </div>
+                     <h3 class="blog-item__title">
+                        Twitter’s Business Shrinks, but Investors See a Glimmer of Hope
+                     </h3>
+                  </a>
+               </li>
+               <li class="blog-item">
+                  <a href="blog.html" class="blog-item__link">
+                     <div class="blog-item__content"
+                        style="background-image: url('./assets/images/blog/blog-item-2.png');">
+                     </div>
+                     <h3 class="blog-item__title">
+                        Twitter’s Business Shrinks, but Investors See a Glimmer of Hope
+                     </h3>
+                  </a>
+               </li>
+               <li class="blog-item">
+                  <a href="blog.html" class="blog-item__link">
+                     <div class="blog-item__content"
+                        style="background-image: url('./assets/images/blog/blog-item-3.png');">
+                     </div>
+                     <h3 class="blog-item__title">
+                        Twitter’s Business Shrinks, but Investors See a Glimmer of Hope
+                     </h3>
+                  </a>
+               </li>
+            </ul>
+            <a href="blog.html" class="btn primary blog-btn">
+               Tìm hiểu thêm
+            </a>
+         </div>
+      </div>
+      <!-- end Blog -->
+
+      <!-- Footer -->
+      <footer class="footer">
+         <div class="container footer-wrapper">
+            <ul class="footer-content">
+               <ul class="footer-list">
+                  <div class="grid wide">
+                     <ul class="row">
+                        <li class="footer-item col l-3 m-4 c-12">
+                           <div class="footer-item__img">
+                              <img class="tyd-footer-logo" src="./assets/images/logo/logo-footer.png" alt="">
+                           </div>
+                           <ul class="social-list">
+                              <li class="social-item">
+                                 <img src="./assets/images/logo/facebook.svg" alt="">
+                              </li>
+                              <li class="social-item">
+                                 <img src="./assets/images/logo/youtube.svg" alt="">
+                              </li>
+                              <li class="social-item">
+                                 <img src="./assets/images/logo/instagram.svg" alt="">
+                              </li>
+                              <li class="social-item">
+                                 <img src="./assets/images/logo/twitter.svg" alt="">
+                              </li>
+                           </ul>
+                           <p class="footer-copyright">©2024 Tâm Y Dung</p>
+                        </li>
+                        <li class="footer-item col l-3 m-4 c-12">
+                           <ul class="site-list">
+                              <li class="site-item"><a href="/">Home</a></li>
+                              <li class="site-item"><a href="dich-vu.html">Dịch vụ</a></li>
+                              <li class="site-item"><a href="blog.html">Blog</a></li>
+                              <li class="site-item"><a href="dich-vu.html">Khóa học</a></li>
+                           </ul>
+                        </li>
+                        <li class="footer-item col l-3 m-4 c-12">
+                           <p class="footer-contact">Liên hệ</p>
+                           <div class="footer-branch">
+                              <p class="footer-branch__title">TYD Thành Thái <br /> Trung tâm đào tạo</p>
+                              <p class="footer-branch__address">152/14 Thành Thái, P.12, Q. 10, TpHCM</p>
+                              <p class="footer-branch__hotline">Hotline: <a href="tel:090 638 6941">090 638 6941</a></p>
+                           </div>
+                        </li>
+                        <li class="footer-item col l-3 m-4 c-12">
+                           <div class="footer-branch">
+                              <p class="footer-branch__title">TYD Trương Quốc Dung</p>
+                              <p class="footer-branch__address">50A Trương Quốc Dung, P.10, Q. Phú Nhuận, TpHCM</p>
+                              <p class="footer-branch__hotline">Hotline: <a href="tel:08 6919 1438">08 6919 1438</a></p>
+                           </div>
+                           <div class="footer-branch">
+                              <p class="footer-branch__title">TYD Thủ Dầu Một</p>
+                              <p class="footer-branch__address">152/14 Thành Thái, P.12, Q. 10, TpHCM</p>
+                              <p class="footer-branch__hotline">Hotline: <a href="tel:090 638 6941">090 638 6941</a></p>
+                           </div>
+                           <p class="footer-copyright-mb">©2024 Tâm Y Dung</p>
+                        </li>
+                     </ul>
+                  </div>
+               </ul>
+            </ul>
+         </div>
+      </footer>
+      <!-- end Footer -->
+   </div>
+   <!-- Video Carosel Modal -->
+   <div class="video-carosel__modal">
+      <lite-youtube id="videoCaroselId" videoid="null" posterquality="maxresdefault"
+         params="controls=1&rel=0&enablejsapi=1" />
+   </div>
+   <!-- end Video carosel modal -->
+</body>
+<script type="module" defer src="./assets/js/lite-youtube/lite-youtube.js"></script>
+<script src="./assets/js/swiper/swiper.min.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</script>
+
+</html>

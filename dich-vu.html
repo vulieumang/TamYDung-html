@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Tâm Y Dung</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.cdnfonts.com/css/roslindale" rel="stylesheet">
+   <link rel="shortcut icon" href="assets/images/icons/favicon.ico" type="image/x-icon">
+
+   <link rel="stylesheet" href="./assets/css/fonts.css">
+   <link rel="stylesheet" href="./assets/css/swiper.min.css">
+   <link rel="stylesheet" href="./assets/css/reset.css">
+   <link rel="stylesheet" href="./assets/css/base.css">
+   <link rel="stylesheet" href="./assets/css/grid.css">
+   <link rel="stylesheet" href="./assets/css/keyframes.css">
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <link rel="stylesheet" href="./assets/css/reponsive.css">
+
+</head>
+
+<body>
+   <div class="app">
+      <!-- Header -->
+      <header class="header">
+         <div class="container header-wrapper inner-wrapper">
+            <div class="logo-tyd">
+               <a href="/">
+                  <img class="logo-tyd__img" src="./assets/images/logo/logo.svg" alt="logo" />
+               </a>
+            </div>
+            <div class="header-nav">
+               <ul class="header-nav__list">
+                  <li class="header-nav__item">
+                     <a href="/" title="Home" class="header-nav__link">Home</a>
+                  </li>
+                  <li class="header-nav__item">
+                     <a href="/dich-vu.html" title="Dịch vụ" class="header-nav__link">Dịch vụ</a>
+                     <ul class="header-subnav__list">
+                        <li class="header-subnav__item">
+                           <a href="dich-vu.html">Chăm sóc da</a>
+                           <img src="./assets/images/icons/arrow-nav.svg" alt="">
+                           <ul class="subnav-item__list">
+                              <li class="subnav-item__item">
+                                 <a href="dich-vu.html?tab=1">Điêu khắc làn da</a>
+                              </li>
+                              <li class="subnav-item__item">
+                                 <a href="dich-vu.html?tab=4">Nâng cơ xóa nếp nhăn</a>
+                              </li>
+                              <li class="subnav-item__item">
+                                 <a href="dich-vu.html?tab=5">Thông tắc cơ mặt</a>
+                              </li>
+                              <li class="subnav-item__item">
+                                 <a href="dich-vu.html?tab=2">Massage mặt</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="header-subnav__item">
+                           <a href="dich-vu.html">Chăm sóc sức khỏe</a>
+                           <img src="./assets/images/icons/arrow-nav.svg" alt="">
+                        </li>
+                        <li class="header-subnav__item">
+                           <a href="dich-vu.html">Chăm sóc tóc</a>
+                           <img src="./assets/images/icons/arrow-nav.svg" alt="">
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="header-nav__item">
+                     <a href="/blog.html" title="Blog" class="header-nav__link">Blog</a>
+                  </li>
+                  <li class="header-nav__item">
+                     <a href="/hoat-dong.html" title="Hoạt động" class="header-nav__link">Hoạt động</a>
+                  </li>
+                  <li class="header-nav__item">
+                     <a href="/lien-he.html" title="Liên hệ" class="header-nav__link">Liên hệ</a>
+                  </li>
+               </ul>
+               <a href="tel:090 638 6941" title="Đặt lịch chăm sóc" class="header-nav__link hide-mobile hide-tablet">
+                  <button class="header-nav__btn btn primary">
+                     Đặt lịch chăm sóc
+                  </button>
+               </a>
+            </div>
+            <div class="header-menu__icon hidden">
+               <img class="header-menu_img" src="./assets/images/icons/menu.svg" alt="menu-icon">
+            </div>
+         </div>
+      </header>
+      <!-- end Header -->
+
+      <!-- Banner -->
+      <div class="service-banner">
+         <div class="container service-banner-wrapper">
+            <div class="inner-wrapper">
+               <img class="service-banner__img" src="./assets/images/banner/service-banner.png"
+                  alt="tyd-service-banner">
+            </div>
+         </div>
+      </div>
+      <!-- end Banner -->
+
+      <!-- Tabs -->
+      <div class="tabs">
+         <div class="container tabs-wrapper inner-wrapper">
+            <ul class="tabs-list">
+               <li class="tabs-item active" data-index="1">
+                  <a class="tabs-item__link">ĐIÊU KHẮC LÀN DA</a>
+               </li>
+               <li class="tabs-item " data-index="2">
+                  <a class="tabs-item__link">MASSAGE MẶT</a>
+               </li>
+               <li class="tabs-item " data-index="3">
+                  <a class="tabs-item__link">MASSAGE MẮT</a>
+               </li>
+               <li class="tabs-item " data-index="4">
+                  <a class="tabs-item__link">NÂNG CƠ XOÁ NẾP NHĂN</a>
+               </li>
+               <li class="tabs-item " data-index="5">
+                  <a class="tabs-item__link">THÔNG TẮC CƠ MẶT</a>
+               </li>
+            </ul>
+            <div class="tabs-content">
+               <div class="tabs-uses">
+                  <div class="tabs-uses__body active">
+                     <div class="body-content__left">
+                        <h1 class="body-content__heading title">Điêu khắc1<br>làn da</h1>
+                        <h1 class="body-content__title">
+                           <span>CÔNG DỤNG</span>
+                           <img class="hide-pc" src="./assets/images/icons/down.svg" alt="">
+                        </h1>
+                        <ul class="body-content__description description-list">
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="body-content__right">
+                        <h1 class="body-content__title">
+                           <span>QUY TRÌNH DỊCH VỤ</span>
+                           <img class="hide-pc" src="./assets/images/icons/down.svg" alt="">
+                        </h1>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">1. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">2. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">3. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">4. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">5. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">6. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tabs-uses__body">
+                     <div class="body-content__left">
+                        <h1 class="body-content__heading title">Điêu khắc2<br>làn da</h1>
+                        <h1 class="body-content__title">
+                           <span>CÔNG DỤNG</span>
+                           <img class="hide-pc" src="./assets/images/icons/down.svg" alt="">
+                        </h1>
+                        <ul class="body-content__description description-list">
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="body-content__right">
+                        <h1 class="body-content__title">
+                           <span>QUY TRÌNH DỊCH VỤ</span>
+                           <img class="hide-pc" src="./assets/images/icons/down.svg" alt="">
+                        </h1>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">1. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">2. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">3. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">4. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">5. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">6. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tabs-uses__body">
+                     <div class="body-content__left">
+                        <h1 class="body-content__heading title">Điêu khắc3<br>làn da</h1>
+                        <h1 class="body-content__title">
+                           <span>CÔNG DỤNG</span>
+                           <img class="hide-pc" src="./assets/images/icons/down.svg" alt="">
+                        </h1>
+                        <ul class="body-content__description description-list">
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="body-content__right">
+                        <h1 class="body-content__title">
+                           <span>QUY TRÌNH DỊCH VỤ</span>
+                           <img class="hide-pc" src="./assets/images/icons/down.svg" alt="">
+                        </h1>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">1. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">2. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">3. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">4. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">5. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">6. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tabs-uses__body">
+                     <div class="body-content__left">
+                        <h1 class="body-content__heading title">Điêu khắc4<br>làn da</h1>
+                        <h1 class="body-content__title">
+                           <span>CÔNG DỤNG</span>
+                           <img class="hide-pc" src="./assets/images/icons/down.svg" alt="">
+                        </h1>
+                        <ul class="body-content__description description-list">
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="body-content__right">
+                        <h1 class="body-content__title">
+                           <span>QUY TRÌNH DỊCH VỤ</span>
+                           <img class="hide-pc" src="./assets/images/icons/down.svg" alt="">
+                        </h1>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">1. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">2. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">3. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">4. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">5. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">6. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tabs-uses__body">
+                     <div class="body-content__left">
+                        <h1 class="body-content__heading title">Điêu khắc5<br>làn da</h1>
+                        <h1 class="body-content__title">
+                           <span>CÔNG DỤNG</span>
+                           <img class="hide-pc" src="./assets/images/icons/down.svg" alt="">
+                        </h1>
+                        <ul class="body-content__description description-list">
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                           <li class="description-item"> <b>Tăng cường độ săn chắc và đàn hồi:</b> Thủ pháp điêu khắc
+                              giúp kích thích sản sinh collagen và elastin, cải thiện sự săn chắc và đàn hồi của da.
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="body-content__right">
+                        <h1 class="body-content__title">
+                           <span>QUY TRÌNH DỊCH VỤ</span>
+                           <img class="hide-pc" src="./assets/images/icons/down.svg" alt="">
+                        </h1>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">1. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">2. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">3. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">4. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">5. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                        <div class="body-content__item">
+                           <div class="body-content__header">
+                              <h1 class="content-header__title">6. ĐÁNH GIÁ TÌNH TRẠNG DA</h1>
+                              <img class="content-header__img hide-mobile" src="./assets/images/icons/down.svg" alt="">
+                           </div>
+                           <img class="content-right__img" src="./assets/images/services/1.png" alt="">
+                           <p class="content-right__desc">Chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da để
+                              chăm sóc phù hợp.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end Tabs -->
+
+      <!-- Booking -->
+      <div class="booking">
+         <div class="container booking-wrapper">
+            <div class="booking-action">
+               <img src="./assets/images/icons/single-logo.svg" alt="" class="booking-action__img">
+               <h1 class="booking-action__title">We are a full-service dermatology centre<br />based in Toronto
+                  focused
+                  on
+                  evidence-based<br />treatment of your skin.</h1>
+               <button class="btn primary btn-border"><a href="tel:090 638 6941">Đặt lịch chăm sóc</a></button>
+            </div>
+            <div class="booking-contact">
+               <ul class="booking-contact__list">
+                  <li class="booking-contact__item">
+                     <div class="footer-branch">
+                        <p class="footer-branch__title">TYD Thành Thái <br /> Trung tâm đào tạo</p>
+                        <p class="footer-branch__address">152/14 Thành Thái, P.12, Q. 10, TpHCM</p>
+                        <p class="footer-branch__hotline">Hotline: <a href="tel:090 638 6941">090 638 6941</a></p>
+                     </div>
+                  </li>
+                  <li class="booking-contact__item">
+                     <div class="footer-branch">
+                        <p class="footer-branch__title">TYD Trương Quốc Dung</p>
+                        <p class="footer-branch__address">50A Trương Quốc Dung, P.10, Q. Phú Nhuận, TpHCM</p>
+                        <p class="footer-branch__hotline">Hotline: <a href="tel:08 6919 1438">08 6919 1438</a></p>
+                     </div>
+                  </li>
+                  <li class="booking-contact__item">
+                     <div class="footer-branch">
+                        <p class="footer-branch__title">TYD Thủ Dầu Một</p>
+                        <p class="footer-branch__address">152/14 Thành Thái, P.12, Q. 10, TpHCM</p>
+                        <p class="footer-branch__hotline">Hotline: <a href="tel:090 638 6941">090 638 6941</a></p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- end Booking -->
+
+      <!-- Carosel -->
+      <div class="carosel blog-carosel">
+         <div class="container carosel-wrapper inner-wrapper">
+            <div class="swiper tyd-blog-swiper">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="swiper-slide__item">
+                        <div class="swiper-slide__img"
+                           style="background-image: url('../assets/images/carosel/carosel-img-1.png');"></div>
+                        <h1 class="swiper-slide__title">Điêu khắc<br />làn da</h1>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                     <div class="swiper-slide__item">
+                        <div class="swiper-slide__img"
+                           style="background-image: url('../assets/images/carosel/carosel-img-1.png');"></div>
+                        <h1 class="swiper-slide__title">Thông tắc<br />cơ mặt</h1>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                     <div class="swiper-slide__item">
+                        <div class="swiper-slide__img"
+                           style="background-image: url('../assets/images/carosel/carosel-img-1.png');"></div>
+                        <h1 class="swiper-slide__title">Nâng cơ<br />xóa nếp nhăn</h1>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                     <div class="swiper-slide__item">
+                        <div class="swiper-slide__img"
+                           style="background-image: url('../assets/images/carosel/carosel-img-1.png');"></div>
+                        <h1 class="swiper-slide__title">Nâng cơ<br />xóa nếp nhăn</h1>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="swiper-slide__item">
+                        <div class="swiper-slide__img"
+                           style="background-image: url('../assets/images/carosel/carosel-img-1.png');"></div>
+                        <h1 class="swiper-slide__title">Điêu khắc<br />làn da</h1>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper__button-next">
+               <img src="./assets/images/icons/left-arrow.svg" alt="arrow-left">
+            </div>
+            <div class="swiper__button-prev">
+               <img src="./assets/images/icons/right-arrow.svg" alt="arrow-right">
+            </div>
+         </div>
+      </div>
+      <!-- end Carosel -->
+
+      <!-- Footer -->
+      <footer class="footer service-footer">
+         <div class="container footer-wrapper">
+            <ul class="footer-content">
+               <ul class="footer-list">
+                  <div class="grid wide">
+                     <ul class="row">
+                        <li class="footer-item col l-3 m-4 c-12">
+                           <div class="footer-item__img">
+                              <img class="tyd-footer-logo" src="./assets/images/logo/logo-footer.png" alt="">
+                           </div>
+                           <ul class="social-list">
+                              <li class="social-item">
+                                 <img src="./assets/images/logo/facebook.svg" alt="">
+                              </li>
+                              <li class="social-item">
+                                 <img src="./assets/images/logo/youtube.svg" alt="">
+                              </li>
+                              <li class="social-item">
+                                 <img src="./assets/images/logo/instagram.svg" alt="">
+                              </li>
+                              <li class="social-item">
+                                 <img src="./assets/images/logo/twitter.svg" alt="">
+                              </li>
+                           </ul>
+                           <p class="footer-copyright">©2024 Tâm Y Dung</p>
+                        </li>
+                        <li class="footer-item col l-3 m-4 c-12">
+                           <ul class="site-list">
+                              <li class="site-item"><a href="/">Home</a></li>
+                              <li class="site-item"><a href="dich-vu.html">Dịch vụ</a></li>
+                              <li class="site-item"><a href="blog.html">Blog</a></li>
+                              <li class="site-item"><a href="dich-vu.html">Khóa học</a></li>
+                           </ul>
+                        </li>
+                        <li class="footer-item col l-3 m-4 c-12">
+                           <p class="footer-contact">Liên hệ</p>
+                           <div class="footer-branch">
+                              <p class="footer-branch__title">TYD Thành Thái <br /> Trung tâm đào tạo</p>
+                              <p class="footer-branch__address">152/14 Thành Thái, P.12, Q. 10, TpHCM</p>
+                              <p class="footer-branch__hotline">Hotline: <a href="tel:090 638 6941">090 638 6941</a>
+                              </p>
+                           </div>
+                        </li>
+                        <li class="footer-item col l-3 m-4 c-12">
+                           <div class="footer-branch">
+                              <p class="footer-branch__title">TYD Trương Quốc Dung</p>
+                              <p class="footer-branch__address">50A Trương Quốc Dung, P.10, Q. Phú Nhuận, TpHCM</p>
+                              <p class="footer-branch__hotline">Hotline: <a href="tel:08 6919 1438">08 6919 1438</a>
+                              </p>
+                           </div>
+                           <div class="footer-branch">
+                              <p class="footer-branch__title">TYD Thủ Dầu Một</p>
+                              <p class="footer-branch__address">152/14 Thành Thái, P.12, Q. 10, TpHCM</p>
+                              <p class="footer-branch__hotline">Hotline: <a href="tel:090 638 6941">090 638 6941</a>
+                              </p>
+                           </div>
+                           <p class="footer-copyright-mb">©2024 Tâm Y Dung</p>
+                        </li>
+                     </ul>
+                  </div>
+               </ul>
+            </ul>
+         </div>
+      </footer>
+      <!-- end Footer -->
+</body>
+<script src="./assets/js/swiper/swiper.min.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</script>
+
+</html>
