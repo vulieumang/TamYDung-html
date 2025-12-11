@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thông Tắc Cơ Mặt - Tâm Y Dung</title>
+    <title>Khóa Học - Tâm Y Dung</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet" />
@@ -21,35 +21,59 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reponsive.css">
     <style>
-        .service-detail {
+        .course-list {
             padding: 50px 0;
         }
 
-        .service-detail-wrapper {
+        .course-item {
             display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 60px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
         }
 
-        .service-content__left,
-        .service-content__right {
-            flex: 1;
-            min-width: 300px;
+        .course-title {
+            font-family: 'Roslindale', serif;
+            font-size: 2.8rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            line-height: 1.3;
         }
 
-        .service-intro {
-            margin-bottom: 20px;
+        .course-desc {
             font-size: 1.6rem;
             line-height: 1.6;
             color: var(--text-color);
+            margin-bottom: 15px;
         }
 
-        .description-item b {
+        .course-info {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .course-info p {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .course-info b {
             font-weight: 700;
-            color: var(--primary-color);
+            color: var(--blue-chill-600);
+        }
+
+        .course-btn {
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
         }
     </style>
-
 </head>
 
 <body>
@@ -68,8 +92,8 @@
                             <a href="/" title="Home" class="header-nav__link">Home</a>
                         </li>
                         <li class="header-nav__item">
-                            <a href="/dich-vu.html" title="Dịch vụ" class="header-nav__link active">Dịch vụ</a>
-                                                        <ul class="header-subnav__list">
+                            <a href="/dich-vu.html" title="Dịch vụ" class="header-nav__link">Dịch vụ</a>
+                            <ul class="header-subnav__list">
                                 <li class="header-subnav__item">
                                     <a href="massage-mat-thu-gian.html">Message Mặt Thư Giãn</a>
                                 </li>
@@ -126,90 +150,74 @@
         </header>
 
         <!-- Banner -->
-        <div class="service-banner">
-            <div class="service-banner-wrapper">
-                <h1 class="service-banner__title">Thông Tắc Cơ Mặt</h1>
+        <div class="blog-banner">
+            <div class="container blog-banner-wrapper">
+                <div class="inner-wrapper">
+                    <img class="blog-banner__img" src="./assets/images/banner/course-banner.png"
+                        alt="tyd-course-banner">
+                </div>
             </div>
         </div>
 
-        <!-- Service Detail -->
-        <div class="service-detail">
-            <div class="container service-detail-wrapper inner-wrapper">
-                <div class="body-content__left">
-                    <h1 class="body-content__heading title">Thông Tắc<br>Cơ Mặt</h1>
-                    <p class="service-intro">
-                        Dịch vụ thông tắc cơ mặt tại Tâm Y Dung không chỉ giúp cải thiện sức khỏe làn da mà còn mang lại
-                        sự hài hòa cho khuôn mặt của bạn. Phương pháp này giúp lưu thông khí huyết, mang lại làn da sáng
-                        mịn và tươi tắn.
-                    </p>
-                    <h1 class="body-content__title">
-                        <span>CÔNG DỤNG</span>
-                    </h1>
-                    <ul class="body-content__description description-list">
-                        <li class="description-item"> <b>Thông Khí Giúp Sáng Da:</b>
-                            Kỹ thuật này giúp lưu thông khí huyết trên bề mặt da, mang lại làn da sáng mịn và tươi tắn.
-                        </li>
-                        <li class="description-item"> <b>Thông Huyết Giúp Da Khỏe Mạnh, Hồng Hào:</b>
-                            Thúc đẩy tuần hoàn máu, giúp da khỏe mạnh và hồng hào tự nhiên; Loại bỏ các độc tố tích tụ.
-                        </li>
-                        <li class="description-item"> <b>Giải Tắc Cơ Mặt – Chỉnh Diện Cân Đối, Hài Hòa:</b>
-                            Khả năng giải tắc cơ mặt, giúp khuôn mặt trở nên cân đối và hài hòa hơn; Khắc phục vấn đề về
-                            mất cân đối cơ mặt.
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="body-content__right">
-                    <h1 class="body-content__title">
-                        <span>QUY TRÌNH DỊCH VỤ</span>
-                    </h1>
-
-                    <div class="body-content__item">
-                        <div class="body-content__header">
-                            <h1 class="content-header__title">1. ĐÁNH GIÁ VÀ TƯ VẤN</h1>
+        <!-- Content -->
+        <div class="course-body">
+            <div class="container inner-wrapper">
+                <div class="course-list">
+                    <!-- Course 1 -->
+                    <div class="course-item">
+                        <h2 class="course-title">MASTER TÂM Y DUNG</h2>
+                        <h3 style="font-size: 1.8rem; font-weight: bold; margin-bottom: 15px;">“HÃY CHẤP CÁNH ƯỚC MƠ,
+                            HOÀI BÃO CỦA BẠN TRỞ THÀNH HIỆN THỰC THÔNG QUA HỌC TẬP VÀ RÈN LUYỆN THỰC TIỄN CÙNG MASTER
+                            TÂM Y DUNG”</h3>
+                        <p class="course-desc">
+                            💥Trở thành Master Tâm Y Dung thành công với sứ mệnh giúp con người làm giàu toàn diện về
+                            Sức khỏe và Sắc đẹp để làm chủ 4 trọng điểm là Tâm - Trí - Thân - Nhan.
+                        </p>
+                        <p class="course-desc">
+                            💥Tâm Y Dung tự hào là trung tâm mang lại giải pháp chăm sóc Sức khỏe và Sắc đẹp toàn diện
+                            dựa trên nền tảng của Y học và Tâm thức. Tạo sự khác biệt cách biệt giúp cho con người sở
+                            hữu sức khỏe và sắc đẹp bền vững trường tồn theo thời gian.
+                        </p>
+                        <p class="course-desc">
+                            💥Được hướng dẫn về pháp lý, hỗ trợ về nhân sự ( Chuyên gia, chuyên viên), kỹ năng set up,
+                            kỹ năng quản lý... cho những người tham gia đã hoàn thành chương trình và cam kết đồng hành
+                            để phát triển sự nghiệp kinh doanh theo mô hình Tâm Y Dung.
+                        </p>
+                        <div class="course-info">
+                            <p><b>💥Đối tượng:</b> Master, Mentor Wit, Doanh Chủ.</p>
+                            <p><b>💥Ngày phỏng vấn:</b> Trước 31/10/2025 (TYD sẽ liên hệ trực tiếp để xếp lịch)</p>
                         </div>
-                        <img class="content-right__img" src="./assets/images/services/thong-tac/TƯ VẤN 1.jpg"
-                            onerror="this.style.display='none'" alt="Tu Van">
-                        <p class="content-right__desc">Các chuyên viên tư vấn sẽ kiểm tra và đánh giá tình trạng da và
-                            cơ mặt để chăm sóc phù hợp.</p>
+                        <a href="https://master.tamydung.com/" target="_blank" class="course-btn btn primary">Đăng Ký
+                            Ngay</a>
                     </div>
 
-                    <div class="body-content__item">
-                        <div class="body-content__header">
-                            <h1 class="content-header__title">2. LÀM SẠCH VÀ CHUẨN BỊ DA</h1>
+                    <!-- Course 2 -->
+                    <div class="course-item">
+                        <h2 class="course-title">CHUYÊN VIÊN TÂM Y DUNG</h2>
+                        <h3 style="font-size: 1.8rem; font-weight: bold; margin-bottom: 15px;">TRỞ THÀNH CHUYÊN VIÊN SỨC
+                            KHỎE VÀ SẮC ĐẸP CHỈ TRONG 100 NGÀY VỚI TÂM Y DUNG!</h3>
+                        <p class="course-desc">
+                            🍀Bạn đam mê lĩnh vực chăm sóc sức khỏe và sắc đẹp? Bạn muốn trở thành một chuyên viên
+                            chuyên nghiệp với kỹ năng vượt trội và cơ hội việc làm hấp dẫn? Khoá đào tạo đặc biệt của
+                            Tâm Y Dung : "Nơi biến ước mơ của bạn thành hiện thực chỉ trong 100 ngày"
+                        </p>
+                        <div class="course-info">
+                            <p><b>🍀VÌ SAO BẠN NÊN CHỌN TÂM Y DUNG???</b></p>
+                            <p>- Tâm Y Dung nơi chuyển hiện thực sức khỏe và sắc đẹp, dựa trên nền tảng Y học và Tâm
+                                thức.</p>
+                            <p>- Được chuyển giao từ các thầy cô, chuyên gia về sức khoẻ và sắc đẹp, đảm bảo kiến thức
+                                và kỹ năng của bạn đạt hiệu quả cao.</p>
+                            <p><b>🛠️ Thực Hành Thuần Thục:</b> Không chỉ lý thuyết mà còn được thực hành các kỹ năng,
+                                chuyên môn cần thiết trong suốt quá trình học.</p>
+                            <p><b>🎓 Chứng Chỉ Hành Nghề:</b> Sau khi tốt nghiệp sẽ được cấp các chứng chỉ hành nghề, mở
+                                ra nhiều cơ hội nghề nghiệp trong lĩnh vực chăm sóc sức khỏe và sắc đẹp.</p>
+                            <p><b>🏢 Cơ Hội Việc Làm Hấp Dẫn:</b> Tâm Y Dung cam kết tạo điều kiện làm việc tại các chi
+                                nhánh của chúng tôi trên toàn quốc.</p>
+                            <p><b>👉Thời gian:</b> Bắt đầu học ngày 29/11/2025</p>
+                            <p><b>👉Hình thức học:</b> Online và Offline</p>
                         </div>
-                        <img class="content-right__img" src="./assets/images/services/thong-tac/LAU SẠCH DA.jpg"
-                            onerror="this.style.display='none'" alt="Lam Sach">
-                        <p class="content-right__desc">Làm sạch và chuẩn bị da mặt để dễ dàng tiếp nhận các bước chăm
-                            sóc tiếp theo.</p>
-                    </div>
-
-                    <div class="body-content__item">
-                        <div class="body-content__header">
-                            <h1 class="content-header__title">3. THÔNG TẮC CƠ MẶT</h1>
-                        </div>
-                        <img class="content-right__img" src="./assets/images/services/thong-tac/THÔNG TẮC 1.jpg"
-                            onerror="this.style.display='none'" alt="Thong Tac">
-                        <p class="content-right__desc">Thực hiện các thủ pháp thông tắc cơ mặt chuyên sâu.</p>
-                    </div>
-
-                    <div class="body-content__item">
-                        <div class="body-content__header">
-                            <h1 class="content-header__title">4. ĐẮP MẶT NẠ</h1>
-                        </div>
-                        <img class="content-right__img"
-                            src="./assets/images/services/thong-tac/MẶT NẠ SINH HỌC NÂNG CƠ.jpg"
-                            onerror="this.style.display='none'" alt="Mat Na">
-                        <p class="content-right__desc">Đắp mặt nạ sinh học phù hợp với từng loại da.</p>
-                    </div>
-
-                    <div class="body-content__item">
-                        <div class="body-content__header">
-                            <h1 class="content-header__title">5. DƯỠNG DA CAO CẤP</h1>
-                        </div>
-                        <img class="content-right__img" src="./assets/images/services/thong-tac/DƯỠNG DA XL.jpg"
-                            onerror="this.style.display='none'" alt="Duong Da">
-                        <p class="content-right__desc">Hoàn tất bằng việc sử dụng các sản phẩm dưỡng da cao cấp.</p>
+                        <a href="https://crm.tamydung.com/?ff_landing=4" target="_blank"
+                            class="course-btn btn primary">Đăng Ký Ngay</a>
                     </div>
                 </div>
             </div>
@@ -228,24 +236,16 @@
                                     </div>
                                     <ul class="social-list">
                                         <li class="social-item">
-                                            <a href="https://www.facebook.com/TamYDungSpa" target="_blank">
-                                                <img src="./assets/images/logo/facebook.svg" alt="">
-                                            </a>
+                                            <img src="./assets/images/logo/facebook.svg" alt="">
                                         </li>
                                         <li class="social-item">
-                                            <a href="https://www.youtube.com/@tamydung" target="_blank">
-                                                <img src="./assets/images/logo/youtube.svg" alt="">
-                                            </a>
+                                            <img src="./assets/images/logo/youtube.svg" alt="">
                                         </li>
                                         <li class="social-item">
-                                            <a href="#" target="_blank">
-                                                <img src="./assets/images/logo/instagram.svg" alt="">
-                                            </a>
+                                            <img src="./assets/images/logo/instagram.svg" alt="">
                                         </li>
                                         <li class="social-item">
-                                            <a href="#" target="_blank">
-                                                <img src="./assets/images/logo/twitter.svg" alt="">
-                                            </a>
+                                            <img src="./assets/images/logo/twitter.svg" alt="">
                                         </li>
                                     </ul>
                                     <p class="footer-copyright">©2024 Tâm Y Dung</p>
@@ -253,10 +253,9 @@
                                 <li class="footer-item col l-3 m-4 c-12">
                                     <ul class="site-list">
                                         <li class="site-item"><a href="/">Home</a></li>
-                                        <li class="site-item"><a href="/dich-vu.html">Dịch vụ</a></li>
-                                        <li class="site-item"><a href="/blog.html">Blog</a></li>
-                                        <li class="site-item"><a href="/hoat-dong.html">Hoạt động</a></li>
-                                        <li class="site-item"><a href="/khoa-hoc.html">Khóa học</a></li>
+                                        <li class="site-item"><a href="dich-vu.html">Dịch vụ</a></li>
+                                        <li class="site-item"><a href="blog.html">Blog</a></li>
+                                        <li class="site-item"><a href="khoa-hoc.html">Khóa học</a></li>
                                     </ul>
                                 </li>
                                 <li class="footer-item col l-3 m-4 c-12">
@@ -272,11 +271,11 @@
                                     <div class="footer-branch">
                                         <p class="footer-branch__title">TYD Thủ Dầu Một</p>
                                         <p class="footer-branch__address">TRUNG TÂM THỂ CHẤT THÀNH PHỐ MỚI BÌNH DƯƠNG
-                                            <br> Công viên Thành phố mới, Hùng Vương, P.Hoà Phú, Thủ Dầu Một, Bình Dương
+                                            <br> Công
+                                            viên Thành phố mới, Hùng Vương, P.Hoà Phú, Thủ Dầu Một, Bình Dương
                                         </p>
                                         <p class="footer-branch__hotline">Hotline: <a href="tel:090 638 6941">090 638
-                                                6941</a>
-                                        </p>
+                                                6941</a></p>
                                     </div>
                                     <p class="footer-copyright-mb">©2024 Tâm Y Dung</p>
                                 </li>
@@ -286,7 +285,6 @@
                 </ul>
             </div>
         </footer>
-
     </div>
 
     <script src="./assets/js/swiper/swiper.min.js"></script>
