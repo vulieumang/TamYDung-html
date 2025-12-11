@@ -1208,3 +1208,7 @@
 }
 
 /* end Video Carosel Modal */
+
+.hidden{
+  display: none;
+}

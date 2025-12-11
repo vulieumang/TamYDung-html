@@ -988,7 +988,7 @@
   }
 
   .contact .contact-body .contact-content {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 32px;
   }
 

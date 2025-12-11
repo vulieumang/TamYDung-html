@@ -147,43 +147,19 @@ branchElms.forEach((branchElm, idx) => {
 //#region Tabs
 const tabsItemElms = document.querySelectorAll(".tabs-item");
 
-function activateTab(index) {
-  if (!index || index < 1 || index > tabsItemElms.length) return;
-
-  for (const elm of tabsItemElms) {
-    elm.classList.remove("active");
-  }
-  
-  // Find the tab with the matching data-index
-  const activeTab = Array.from(tabsItemElms).find(elm => elm.getAttribute('data-index') == index);
-  if (activeTab) {
-      activeTab.classList.add("active");
-  }
-
-  for (const tabBody of tabsBodys) {
-    tabBody.classList.remove('active');
-  }
-  tabsBodys?.[index - 1]?.classList.add('active');
-}
-
 tabsItemElms.forEach((element, idx) => {
   element.addEventListener("click", () => {
+    for (const elm of tabsItemElms) {
+      elm.classList.remove("active");
+    }
+    element.classList.add("active");
     const dataIndex = element.getAttribute('data-index');
-    activateTab(dataIndex);
+    for (const tabBody of tabsBodys) {
+      tabBody.classList.remove('active');
+    }
+    tabsBodys?.[dataIndex - 1].classList.add('active');
   });
 });
-
-// Check for tab parameter in URL
-const urlParams = new URLSearchParams(window.location.search);
-const tabParam = urlParams.get('tab');
-if (tabParam) {
-    activateTab(tabParam);
-    // Scroll to tabs section
-    const tabsSection = document.querySelector(".tabs");
-    if(tabsSection) {
-        tabsSection.scrollIntoView({ behavior: 'smooth' });
-    }
-}
 //#endregion
 
 //#region Contact
@@ -194,7 +170,20 @@ contactItemElms.forEach((element, idx) => {
     }
     element.classList.add("active");
     const dataSrc = element.getAttribute('data-src');
-    contactMapImgElm.setAttribute('src', dataSrc)
+    // contactMapImgElm.setAttribute('src', dataSrc)
+    // show div id = data-src
+    // hide other div class map
+    document.querySelectorAll('.map').forEach((elm) => {
+      if (elm.id !== 'map' + dataSrc) {
+        elm.style.display = 'none';
+      }})
+    document.querySelector('#map' + dataSrc).style.display = 'block';
+
+
+
+
+    
+
   })
 })
 
@@ -225,3 +214,4 @@ handleOpenVideoModal(videoControlElms);
 handleOpenVideoModal(videoSliderSrcElms);
 
 // #endregion
+

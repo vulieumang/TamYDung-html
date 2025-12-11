@@ -1,35 +1,35 @@
 @font-face {
   font-family: 'RoslindaleText';
-  src: url('/assets/fonts/RoslindaleText-Bold.eot');
-  src: local('/assets/fonts/RoslindaleText Bold'), local('RoslindaleText-Bold'),
+  src: url('../fonts/RoslindaleText-Bold.eot');
+  src: local('../fonts/RoslindaleText Bold'), local('RoslindaleText-Bold'),
       url('/RoslindaleText-Bold.eot?#iefix') format('embedded-opentype'),
-      url('/assets/fonts/RoslindaleText-Bold.woff2') format('woff2'),
-      url('/assets/fonts/RoslindaleText-Bold.woff') format('woff'),
-      url('/assets/fonts/RoslindaleText-Bold.ttf') format('truetype');
+      url('../fonts/RoslindaleText-Bold.woff2') format('woff2'),
+      url('../fonts/RoslindaleText-Bold.woff') format('woff'),
+      url('../fonts/RoslindaleText-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'RoslindaleText';
-  src: url('/assets/fonts/RoslindaleText-Italic.eot');
-  src: local('/assets/fonts/RoslindaleText Italic'), local('RoslindaleText-Italic'),
-      url('/assets/fonts/RoslindaleText-Italic.eot?#iefix') format('embedded-opentype'),
-      url('/assets/fonts/RoslindaleText-Italic.woff2') format('woff2'),
-      url('/assets/fonts/RoslindaleText-Italic.woff') format('woff'),
-      url('/assets/fonts/RoslindaleText-Italic.ttf') format('truetype');
+  src: url('../fonts/RoslindaleText-Italic.eot');
+  src: local('../fonts/RoslindaleText Italic'), local('RoslindaleText-Italic'),
+      url('../fonts/RoslindaleText-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RoslindaleText-Italic.woff2') format('woff2'),
+      url('../fonts/RoslindaleText-Italic.woff') format('woff'),
+      url('../fonts/RoslindaleText-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'RoslindaleText';
-  src: url('/assets/fonts/RoslindaleText-Regular.eot');
-  src: local('/assets/fonts/RoslindaleText Regular'), local('RoslindaleText-Regular'),
-      url('/assets/fonts/RoslindaleText-Regular.eot?#iefix') format('embedded-opentype'),
-      url('/assets/fonts/RoslindaleText-Regular.woff2') format('woff2'),
-      url('/assets/fonts/RoslindaleText-Regular.woff') format('woff'),
-      url('/assets/fonts/RoslindaleText-Regular.ttf') format('truetype');
+  src: url('../fonts/RoslindaleText-Regular.eot');
+  src: local('../fonts/RoslindaleText Regular'), local('RoslindaleText-Regular'),
+      url('../fonts/RoslindaleText-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RoslindaleText-Regular.woff2') format('woff2'),
+      url('../fonts/RoslindaleText-Regular.woff') format('woff'),
+      url('../fonts/RoslindaleText-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
