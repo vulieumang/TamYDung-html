@@ -50,6 +50,7 @@
 .header-nav__list .header-nav__item .header-nav__link {
   color: var(--text-black);
 }
+
 /* end Header */
 
 /* Banner */
@@ -90,6 +91,7 @@
   right: 155px;
   top: 485px;
 }
+
 /* end Banner */
 
 /* Introduce */
@@ -117,6 +119,7 @@
 .introduce-wrapper .introduce-img {
   max-width: 220px;
 }
+
 /* end Introduce */
 
 /* Carosel */
@@ -398,6 +401,7 @@
 .carosel-wrapper .thumb-swiper-button__prev {
   left: -90px;
 }
+
 /* end Video slider thumbs */
 
 /* Branchs */
@@ -424,12 +428,10 @@
   bottom: 0;
   right: 0;
   left: 0;
-  background: linear-gradient(
-    270deg,
-    rgba(234, 255, 253, 0) 29.2%,
-    rgba(19, 181, 201, 0.92) 99.99%,
-    #00afc4 100%
-  );
+  background: linear-gradient(270deg,
+      rgba(234, 255, 253, 0) 29.2%,
+      rgba(19, 181, 201, 0.92) 99.99%,
+      #00afc4 100%);
   z-index: 1;
 }
 
@@ -536,6 +538,7 @@
 .branch .branch-item__right .branch-item__desc {
   font-size: 20px;
 }
+
 /* end Branchs */
 
 /* Blog */
@@ -599,6 +602,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.action-content__img {
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .blog-item .blog-item__title {
@@ -729,6 +741,7 @@
 .service-banner-wrapper .service-banner__img {
   display: none;
 }
+
 /* end Banner */
 
 /* Tabs */
@@ -929,6 +942,7 @@
   flex: 1;
   color: var(--blue-chill-50) !important;
 }
+
 /* end Booking */
 
 /* end Service */
@@ -994,6 +1008,7 @@
   font-weight: 500;
   margin-bottom: 35px;
 }
+
 .recommend-list .recommend-item .recommend-desc {
   font-size: 24px;
   line-height: 28px;
@@ -1002,6 +1017,7 @@
   padding-bottom: 0;
   color: var(--text-black);
 }
+
 /* end Recommend */
 /* end Blog */
 
@@ -1218,6 +1234,7 @@
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -1225,9 +1242,10 @@
 
 /* end Video Carosel Modal */
 
-.hidden{
+.hidden {
   display: none;
 }
+
 /* Service Directory */
 .service-directory {
   padding: 50px 0;
@@ -1243,7 +1261,7 @@
   background: #fff;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
