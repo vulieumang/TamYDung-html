@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hỗ Trợ Vai Cổ Gáy - Tâm Y Dung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/roslindale" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/icons/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/keyframes.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <style>
+        .service-detail {
+            padding: 50px 0;
+        }
+
+        .service-detail-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .service-content__left,
+        .service-content__right {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .service-intro {
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .description-item b {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="container header-wrapper inner-wrapper">
+                <div class="logo-tyd">
+                    <a href="/">
+                        <img class="logo-tyd__img" src="./assets/images/logo/logo.svg" alt="logo" />
+                    </a>
+                </div>
+                <div class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a href="/" title="Home" class="header-nav__link">Home</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="/dich-vu.html" title="Dịch vụ" class="header-nav__link active">Dịch vụ</a>
+                            <ul class="header-subnav__list">
+                                <li class="header-subnav__item">
+                                    <a href="massage-mat-thu-gian.html">Message Mặt Thư Giãn</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="nang-co.html">Nâng Cơ Xóa Nếp Nhăn</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="cham-soc-suc-khoe-body.html">Chăm Sóc Sức Khỏe Body</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="dieu-khac.html">Điêu Khắc Làn Da</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="thong-tac.html">Thông Tắc Cơ Mặt</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="giuong-da-nong.html">Giường Đá Nóng</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="goi-dau.html">Gội Đầu</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="ho-tro-vai-co-gay.html">Hỗ Trợ Vai Cổ Gáy</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="massage-bung.html">Massage Bụng</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="cham-soc-mat-chuyen-sau.html">Chăm Sóc Mắt Chuyên Sâu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="/blog.html" title="Blog" class="header-nav__link">Blog</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="/hoat-dong.html" title="Hoạt động" class="header-nav__link">Hoạt động</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="/lien-he.html" title="Liên hệ" class="header-nav__link">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <a href="tel:090 638 6941" title="Đặt lịch chăm sóc"
+                        class="header-nav__link hide-mobile hide-tablet">
+                        <button class="header-nav__btn btn primary">
+                            Đặt lịch chăm sóc
+                        </button>
+                    </a>
+                </div>
+                <div class="header-menu__icon hidden">
+                    <img class="header-menu_img" src="./assets/images/icons/menu.svg" alt="menu-icon">
+                </div>
+            </div>
+        </header>
+
+        <!-- Banner -->
+        <div class="service-banner">
+            <div class="container service-banner-wrapper">
+                <div class="inner-wrapper">
+                    <img class="service-banner__img" src="./assets/images/banner/service-banner.png"
+                        alt="tyd-service-banner">
+                </div>
+            </div>
+        </div>
+
+        <!-- Service Detail -->
+        <div class="service-detail">
+            <div class="container service-detail-wrapper inner-wrapper">
+                <div class="body-content__left">
+                    <h1 class="body-content__heading title">Hỗ Trợ<br>Vai Cổ Gáy</h1>
+                    <p class="service-intro">
+                        Dịch vụ Hỗ trợ Vai Cổ Gáy tại Tâm Y Dung sử dụng các kỹ thuật massage đặc biệt để giảm đau nhức
+                        và căng thẳng, giúp bạn cảm thấy thư giãn ngay lập tức.
+                    </p>
+                    <h1 class="body-content__title">
+                        <span>LỢI ÍCH DỊCH VỤ</span>
+                    </h1>
+                    <ul class="body-content__description description-list">
+                        <li class="description-item"> <b>Giảm Đau Và Căng Thẳng:</b> Giúp làm giảm cảm giác đau và căng
+                            thẳng ở khu vực vai, cổ và gáy, mang lại cảm giác thư giãn và nhẹ nhõm.</li>
+                        <li class="description-item"> <b>Cải thiện Độ Linh Hoạt Cơ Thể:</b> Giúp cải thiện độ linh hoạt
+                            của cơ và khớp, giảm thiểu tình trạng cứng cơ.</li>
+                        <li class="description-item"> <b>Tăng Cường Tuần Hoàn Máu:</b> Kích thích tuần hoàn máu, cung
+                            cấp oxy và dưỡng chất cần thiết cho các cơ và mô.</li>
+                        <li class="description-item"> <b>Hỗ Trợ Tinh Thần:</b> Giảm căng thẳng tinh thần và mệt mỏi do
+                            công việc, tạo điều kiện cho tinh thần được thư giãn.</li>
+                        <li class="description-item"> <b>Tăng Cường Sự Tập Trung:</b> Giảm đau và căng thẳng giúp bạn
+                            cảm thấy thoải mái hơn và cải thiện sự tập trung.</li>
+                        <li class="description-item"> <b>Cải Thiện Chất Lượng Đời Sống:</b> Mang lại cảm giác thoải mái
+                            và vui vẻ hơn trong công việc và cuộc sống hàng ngày.</li>
+                    </ul>
+                </div>
+
+                <div class="body-content__right">
+                    <h1 class="body-content__title">
+                        <span>HÌNH ẢNH DỊCH VỤ</span>
+                    </h1>
+
+                    <div class="body-content__item">
+                        <img class="content-right__img" src="./assets/images/services/ho-tro-vai-co-gay/DXN02858.jpg"
+                            onerror="this.style.display='none'" alt="Vai Co Gay 1">
+                    </div>
+                    <div class="body-content__item">
+                        <img class="content-right__img" src="./assets/images/services/ho-tro-vai-co-gay/DXN02866.jpg"
+                            onerror="this.style.display='none'" alt="Vai Co Gay 2">
+                    </div>
+                    <div class="body-content__item">
+                        <img class="content-right__img" src="./assets/images/services/ho-tro-vai-co-gay/DXN02867.jpg"
+                            onerror="this.style.display='none'" alt="Vai Co Gay 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-wrapper">
+                <ul class="footer-content">
+                    <ul class="footer-list">
+                        <div class="grid wide">
+                            <ul class="row">
+                                <li class="footer-item col l-3 m-4 c-12">
+                                    <div class="footer-item__img">
+                                        <img class="tyd-footer-logo" src="./assets/images/logo/logo-footer.png" alt="">
+                                    </div>
+                                    <ul class="social-list">
+                                        <li class="social-item">
+                                            <a href="https://www.facebook.com/TamYDungSpa" target="_blank">
+                                                <img src="./assets/images/logo/facebook.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="https://www.youtube.com/@tamydung" target="_blank">
+                                                <img src="./assets/images/logo/youtube.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="#" target="_blank">
+                                                <img src="./assets/images/logo/instagram.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="#" target="_blank">
+                                                <img src="./assets/images/logo/twitter.svg" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <p class="footer-copyright">©2024 Tâm Y Dung</p>
+                                </li>
+                                <li class="footer-item col l-3 m-4 c-12">
+                                    <ul class="site-list">
+                                        <li class="site-item"><a href="/">Home</a></li>
+                                        <li class="site-item"><a href="/dich-vu.html">Dịch vụ</a></li>
+                                        <li class="site-item"><a href="/blog.html">Blog</a></li>
+                                        <li class="site-item"><a href="/hoat-dong.html">Hoạt động</a></li>
+                                    </ul>
+                                </li>
+                                <li class="footer-item col l-3 m-4 c-12">
+                                    <p class="footer-contact">Liên hệ</p>
+                                    <div class="footer-branch">
+                                        <p class="footer-branch__title">TYD Thành Thái <br /> Trung tâm đào tạo</p>
+                                        <p class="footer-branch__address">152/14 Thành Thái, P.12, Q. 10, TpHCM</p>
+                                        <p class="footer-branch__hotline">Hotline: <a href="tel:090 638 6941">090 638
+                                                6941</a></p>
+                                    </div>
+                                </li>
+                                <li class="footer-item col l-3 m-4 c-12">
+                                    <div class="footer-branch">
+                                        <p class="footer-branch__title">TYD Thủ Dầu Một</p>
+                                        <p class="footer-branch__address">TRUNG TÂM THỂ CHẤT THÀNH PHỐ MỚI BÌNH DƯƠNG
+                                            <br> Công viên Thành phố mới, Hùng Vương, P.Hoà Phú, Thủ Dầu Một, Bình Dương
+                                        </p>
+                                        <p class="footer-branch__hotline">Hotline: <a href="tel:090 638 6941">090 638
+                                                6941</a>
+                                        </p>
+                                    </div>
+                                    <p class="footer-copyright-mb">©2024 Tâm Y Dung</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./assets/js/swiper/swiper.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chăm Sóc Sức Khỏe Body - Tâm Y Dung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/roslindale" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/icons/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/keyframes.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <style>
+        .service-detail {
+            padding: 50px 0;
+        }
+
+        .service-detail-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .service-content__left,
+        .service-content__right {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .service-intro {
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .description-item b {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="container header-wrapper inner-wrapper">
+                <div class="logo-tyd">
+                    <a href="/">
+                        <img class="logo-tyd__img" src="./assets/images/logo/logo.svg" alt="logo" />
+                    </a>
+                </div>
+                <div class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a href="/" title="Home" class="header-nav__link">Home</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="/dich-vu.html" title="Dịch vụ" class="header-nav__link active">Dịch vụ</a>
+                            <ul class="header-subnav__list">
+                                <li class="header-subnav__item">
+                                    <a href="massage-mat-thu-gian.html">Message Mặt Thư Giãn</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="nang-co.html">Nâng Cơ Xóa Nếp Nhăn</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="cham-soc-suc-khoe-body.html">Chăm Sóc Sức Khỏe Body</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="dieu-khac.html">Điêu Khắc Làn Da</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="thong-tac.html">Thông Tắc Cơ Mặt</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="giuong-da-nong.html">Giường Đá Nóng</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="goi-dau.html">Gội Đầu</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="ho-tro-vai-co-gay.html">Hỗ Trợ Vai Cổ Gáy</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="massage-bung.html">Massage Bụng</a>
+                                </li>
+                                <li class="header-subnav__item">
+                                    <a href="cham-soc-mat-chuyen-sau.html">Chăm Sóc Mắt Chuyên Sâu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="/blog.html" title="Blog" class="header-nav__link">Blog</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="/hoat-dong.html" title="Hoạt động" class="header-nav__link">Hoạt động</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="/lien-he.html" title="Liên hệ" class="header-nav__link">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <a href="tel:090 638 6941" title="Đặt lịch chăm sóc"
+                        class="header-nav__link hide-mobile hide-tablet">
+                        <button class="header-nav__btn btn primary">
+                            Đặt lịch chăm sóc
+                        </button>
+                    </a>
+                </div>
+                <div class="header-menu__icon hidden">
+                    <img class="header-menu_img" src="./assets/images/icons/menu.svg" alt="menu-icon">
+                </div>
+            </div>
+        </header>
+
+        <!-- Banner -->
+        <div class="service-banner">
+            <div class="container service-banner-wrapper">
+                <div class="inner-wrapper">
+                    <img class="service-banner__img" src="./assets/images/banner/service-banner.png"
+                        alt="tyd-service-banner">
+                </div>
+            </div>
+        </div>
+
+        <!-- Service Detail -->
+        <div class="service-detail">
+            <div class="container service-detail-wrapper inner-wrapper">
+                <div class="body-content__left">
+                    <h1 class="body-content__heading title">Chăm Sóc<br>Sức Khỏe Body</h1>
+                    <p class="service-intro">
+                        Dịch vụ massage body tại Tâm Y Dung là một liệu pháp chăm sóc sức khỏe toàn diện, kết hợp giữa
+                        kỹ thuật massage chuyên sâu và sự thư giãn tuyệt đối. Chúng tôi mang đến cho bạn những lợi ích
+                        tuyệt vời về sức khỏe và tinh thần.
+                    </p>
+                    <h1 class="body-content__title">
+                        <span>CÔNG DỤNG</span>
+                    </h1>
+                    <ul class="body-content__description description-list">
+                        <li class="description-item"> <b>Thư Giãn Cơ Bắp:</b>
+                            Giảm tình trạng căng cứng cơ do vận động nhiều hoặc ngồi lâu một chỗ; Loại bỏ acid lactic
+                            tích tụ trong cơ, giúp giảm đau nhức và mệt mỏi.
+                        </li>
+                        <li class="description-item"> <b>Cải Thiện Tuần Hoàn Máu:</b>
+                            Kích thích lưu thông máu, giúp cơ thể nhận đủ dưỡng chất và oxy, đồng thời loại bỏ độc tố
+                            khỏi các mô; Hỗ trợ cơ thể phục hồi sau những tổn thương nhỏ.
+                        </li>
+                        <li class="description-item"> <b>Giảm Đau Mỏi Cơ Và Căng Cứng:</b>
+                            Giải tỏa những vùng cơ bị căng cứng, đau mỏi; Hiệu quả với những người thường xuyên làm việc
+                            trong môi trường ngồi nhiều.
+                        </li>
+                        <li class="description-item"> <b>Tăng Độ Dẻo Dai Cho Cơ Thể:</b>
+                            Giúp tăng cường sự linh hoạt của các khớp và cơ bắp, làm giảm nguy cơ chấn thương.
+                        </li>
+                        <li class="description-item"> <b>Hỗ Trợ Thải Độc Cơ Thể:</b>
+                            Kích thích hệ bạch huyết, giúp cơ thể đào thải độc tố tích tụ lâu ngày.
+                        </li>
+                        <li class="description-item"> <b>Giúp Da Săn Chắc Và Mịn Màng:</b>
+                            Cải thiện làn da, giúp da săn chắc và mềm mại hơn; Tăng cường độ ẩm cho da.
+                        </li>
+                        <li class="description-item"> <b>Cải Thiện Chất Lượng Giấc Ngủ:</b>
+                            Mang lại giấc ngủ sâu và ngon hơn nhờ khả năng thư giãn toàn thân.
+                        </li>
+                        <li class="description-item"> <b>Tăng Cường Sức Khỏe Tinh Thần:</b>
+                            Giúp ổn định tinh thần, giảm các triệu chứng lo âu, stress.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="body-content__right">
+                    <h1 class="body-content__title">
+                        <span>HÌNH ẢNH DỊCH VỤ</span>
+                    </h1>
+
+                    <div class="body-content__item">
+                        <img class="content-right__img"
+                            src="./assets/images/services/cham-soc-suc-khoe-body/DXN02852.jpg"
+                            onerror="this.style.display='none'" alt="Massage Body 1">
+                    </div>
+                    <div class="body-content__item">
+                        <img class="content-right__img"
+                            src="./assets/images/services/cham-soc-suc-khoe-body/DXN02885.jpg"
+                            onerror="this.style.display='none'" alt="Massage Body 2">
+                    </div>
+                    <div class="body-content__item">
+                        <img class="content-right__img"
+                            src="./assets/images/services/cham-soc-suc-khoe-body/DXN02890.jpg"
+                            onerror="this.style.display='none'" alt="Massage Body 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-wrapper">
+                <ul class="footer-content">
+                    <ul class="footer-list">
+                        <div class="grid wide">
+                            <ul class="row">
+                                <li class="footer-item col l-3 m-4 c-12">
+                                    <div class="footer-item__img">
+                                        <img class="tyd-footer-logo" src="./assets/images/logo/logo-footer.png" alt="">
+                                    </div>
+                                    <ul class="social-list">
+                                        <li class="social-item">
+                                            <a href="https://www.facebook.com/TamYDungSpa" target="_blank">
+                                                <img src="./assets/images/logo/facebook.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="https://www.youtube.com/@tamydung" target="_blank">
+                                                <img src="./assets/images/logo/youtube.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="#" target="_blank">
+                                                <img src="./assets/images/logo/instagram.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="#" target="_blank">
+                                                <img src="./assets/images/logo/twitter.svg" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <p class="footer-copyright">©2024 Tâm Y Dung</p>
+                                </li>
+                                <li class="footer-item col l-3 m-4 c-12">
+                                    <ul class="site-list">
+                                        <li class="site-item"><a href="/">Home</a></li>
+                                        <li class="site-item"><a href="/dich-vu.html">Dịch vụ</a></li>
+                                        <li class="site-item"><a href="/blog.html">Blog</a></li>
+                                        <li class="site-item"><a href="/hoat-dong.html">Hoạt động</a></li>
+                                    </ul>
+                                </li>
+                                <li class="footer-item col l-3 m-4 c-12">
+                                    <p class="footer-contact">Liên hệ</p>
+                                    <div class="footer-branch">
+                                        <p class="footer-branch__title">TYD Thành Thái <br /> Trung tâm đào tạo</p>
+                                        <p class="footer-branch__address">152/14 Thành Thái, P.12, Q. 10, TpHCM</p>
+                                        <p class="footer-branch__hotline">Hotline: <a href="tel:090 638 6941">090 638
+                                                6941</a></p>
+                                    </div>
+                                </li>
+                                <li class="footer-item col l-3 m-4 c-12">
+                                    <div class="footer-branch">
+                                        <p class="footer-branch__title">TYD Thủ Dầu Một</p>
+                                        <p class="footer-branch__address">TRUNG TÂM THỂ CHẤT THÀNH PHỐ MỚI BÌNH DƯƠNG
+                                            <br> Công viên Thành phố mới, Hùng Vương, P.Hoà Phú, Thủ Dầu Một, Bình Dương
+                                        </p>
+                                        <p class="footer-branch__hotline">Hotline: <a href="tel:090 638 6941">090 638
+                                                6941</a>
+                                        </p>
+                                    </div>
+                                    <p class="footer-copyright-mb">©2024 Tâm Y Dung</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./assets/js/swiper/swiper.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
