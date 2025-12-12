@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tâm Y Dung OG Image</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/roslindale" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --blue-chill-500: #00ddea;
+            --blue-chill-600: #00afc4;
+            --blue-chill-900: #0e5b6b;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 1200px;
+            height: 630px;
+            font-family: 'Dosis', sans-serif;
+            /* Deep Aqua Gradient Background */
+            background: linear-gradient(135deg, var(--blue-chill-900) 0%, var(--blue-chill-600) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: white;
+            overflow: hidden;
+            /* Aesthetic cutting guide border */
+            border: 2px dashed rgba(0, 221, 234, 0.5);
+        }
+
+        /* Glassmorphism Overlay Circles for flair */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            z-index: 0;
+        }
+
+        .circle-1 {
+            width: 400px;
+            height: 400px;
+            top: -100px;
+            left: -100px;
+            background: rgba(0, 221, 234, 0.2);
+        }
+
+        .circle-2 {
+            width: 300px;
+            height: 300px;
+            bottom: -50px;
+            right: -50px;
+            background: rgba(0, 175, 196, 0.3);
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            width: 100%;
+        }
+
+        .logo-area {
+            margin-bottom: 20px;
+        }
+
+        .main-logo {
+            height: 140px;
+            /* Assuming logo is dark, invert to make it white */
+            filter: brightness(0) invert(1);
+        }
+
+        h1 {
+            font-family: 'Roslindale', serif;
+            font-size: 70px;
+            font-weight: 400;
+            font-style: italic;
+            /* Gradient Text */
+            background: linear-gradient(90deg, #fff, var(--blue-chill-500));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 50px;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .divider {
+            width: 120px;
+            height: 4px;
+            background: var(--blue-chill-500);
+            border-radius: 2px;
+            margin: 0 auto 40px;
+        }
+
+        .description-box {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .description-box p {
+            font-size: 24px;
+            line-height: 1.6;
+            color: #d0fbfc;
+            font-weight: 300;
+        }
+
+        .description-box strong {
+            color: var(--white);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Decorative Background Elements -->
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+
+    <div class="content">
+        <div class="logo-area">
+            <!-- Ensure this path is correct relative to where you open the file -->
+            <img src="./assets/images/logo/logo.svg" class="main-logo" alt="Tâm Y Dung">
+        </div>
+
+        <div class="divider"></div>
+
+        <h1>Nâng tầm nhận thức <br> Về sức khỏe & sắc đẹp</h1>
+
+        <div class="description-box">
+            <p>
+                Tâm Y Dung là giải pháp, là trung tâm chăm sóc sức khoẻ và sắc đẹp dựa trên nền tảng của y học và tâm
+                thức.
+                <br>
+                Tâm Y Dung chăm sóc cho con người <strong>Tâm, Trí, Thân, Nhan</strong>.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
