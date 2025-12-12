@@ -1,330 +1,306 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Dịch vụ - Tâm Y Dung</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet" />
-   <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
-   <link href="https://fonts.cdnfonts.com/css/roslindale" rel="stylesheet">
-   <link rel="shortcut icon" href="assets/images/icons/favicon.ico" type="image/x-icon">
-
-   <link rel="stylesheet" href="./assets/css/fonts.css">
-   <link rel="stylesheet" href="./assets/css/swiper.min.css">
-   <link rel="stylesheet" href="./assets/css/reset.css">
-   <link rel="stylesheet" href="./assets/css/base.css">
-   <link rel="stylesheet" href="./assets/css/grid.css">
-   <link rel="stylesheet" href="./assets/css/keyframes.css">
-   <link rel="stylesheet" href="./assets/css/style.css">
-   <link rel="stylesheet" href="./assets/css/reponsive.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dịch vụ - Tâm Y Dung</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.cdnfonts.com/css/roslindale" rel="stylesheet"/>
+<link href="assets/images/icons/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="./assets/css/fonts.css" rel="stylesheet"/>
+<link href="./assets/css/swiper.min.css" rel="stylesheet"/>
+<link href="./assets/css/reset.css" rel="stylesheet"/>
+<link href="./assets/css/base.css" rel="stylesheet"/>
+<link href="./assets/css/grid.css" rel="stylesheet"/>
+<link href="./assets/css/keyframes.css" rel="stylesheet"/>
+<link href="./assets/css/style.css" rel="stylesheet"/>
+<link href="./assets/css/reponsive.css" rel="stylesheet"/>
+<meta content="Dịch vụ - Tâm Y Dung" property="og:title"/>
+<meta content="Giúp thư giãn cơ mặt, tăng cường tuần hoàn máu và mang lại làn da
+                        tươi trẻ, rạng rỡ." property="og:description"/>
+<meta content="./assets/images/og-image.jpg" property="og:image"/>
+<meta content="https://tamydung.com/dich-vu.html" property="og:url"/>
+<meta content="website" property="og:type"/>
 </head>
-
 <body>
-   <div class="app">
-      <!-- Header -->
-      <header class="header">
-         <div class="container header-wrapper inner-wrapper">
-            <div class="logo-tyd">
-               <a href="/">
-                  <img class="logo-tyd__img" src="./assets/images/logo/logo.svg" alt="logo" />
-               </a>
-            </div>
-            <div class="header-nav">
-               <ul class="header-nav__list">
-                  <li class="header-nav__item">
-                     <a href="/" title="Home" class="header-nav__link">Home</a>
-                  </li>
-                  <li class="header-nav__item">
-                     <a href="/dich-vu.html" title="Dịch vụ" class="header-nav__link active">Dịch vụ</a>
-                     <ul class="header-subnav__list">
-                        <li class="header-subnav__item">
-                           <a href="dich-vu-massage-mat-thu-gian.html">Message Mặt Thư Giãn</a>
-                        </li>
-                        <li class="header-subnav__item">
-                           <a href="dich-vu-nang-co.html">Nâng Cơ Xóa Nếp Nhăn</a>
-                        </li>
-                        <li class="header-subnav__item">
-                           <a href="dich-vu-cham-soc-suc-khoe-body.html">Chăm Sóc Sức Khỏe Body</a>
-                        </li>
-                        <li class="header-subnav__item">
-                           <a href="dich-vu-dieu-khac.html">Điêu Khắc Làn Da</a>
-                        </li>
-                        <li class="header-subnav__item">
-                           <a href="dich-vu-thong-tac.html">Thông Tắc Cơ Mặt</a>
-                        </li>
-                        <li class="header-subnav__item">
-                           <a href="dich-vu-giuong-da-nong.html">Giường Đá Nóng</a>
-                        </li>
-                        <li class="header-subnav__item">
-                           <a href="dich-vu-goi-dau.html">Gội Đầu</a>
-                        </li>
-                        <li class="header-subnav__item">
-                           <a href="dich-vu-ho-tro-vai-co-gay.html">Hỗ Trợ Vai Cổ Gáy</a>
-                        </li>
-                        <li class="header-subnav__item">
-                           <a href="dich-vu-massage-bung.html">Massage Bụng</a>
-                        </li>
-                        <li class="header-subnav__item">
-                           <a href="dich-vu-cham-soc-mat-chuyen-sau.html">Chăm Sóc Mắt Chuyên Sâu</a>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="header-nav__item">
-                     <a href="/blog.html" title="Blog" class="header-nav__link">Blog</a>
-                  </li>
-                  <li class="header-nav__item">
-                     <a href="/hoat-dong.html" title="Hoạt động" class="header-nav__link">Hoạt động</a>
-                  </li>
-                  <li class="header-nav__item">
-                     <a href="/lien-he.html" title="Liên hệ" class="header-nav__link">Liên hệ</a>
-                  </li>
-               </ul>
-               <a href="tel:090 638 6941" title="Đặt lịch chăm sóc" class="header-nav__link hide-mobile hide-tablet">
-                  <button class="header-nav__btn btn primary">
+<div class="app">
+<!-- Header -->
+<header class="header">
+<div class="container header-wrapper inner-wrapper">
+<div class="logo-tyd">
+<a href="/">
+<img alt="logo" class="logo-tyd__img" src="./assets/images/logo/logo.svg"/>
+</a>
+</div>
+<div class="header-nav">
+<ul class="header-nav__list">
+<li class="header-nav__item">
+<a class="header-nav__link" href="/" title="Home">Home</a>
+</li>
+<li class="header-nav__item">
+<a class="header-nav__link active" href="/dich-vu.html" title="Dịch vụ">Dịch vụ</a>
+<ul class="header-subnav__list">
+<li class="header-subnav__item">
+<a href="dich-vu-massage-mat-thu-gian.html">Message Mặt Thư Giãn</a>
+</li>
+<li class="header-subnav__item">
+<a href="dich-vu-nang-co.html">Nâng Cơ Xóa Nếp Nhăn</a>
+</li>
+<li class="header-subnav__item">
+<a href="dich-vu-cham-soc-suc-khoe-body.html">Chăm Sóc Sức Khỏe Body</a>
+</li>
+<li class="header-subnav__item">
+<a href="dich-vu-dieu-khac.html">Điêu Khắc Làn Da</a>
+</li>
+<li class="header-subnav__item">
+<a href="dich-vu-thong-tac.html">Thông Tắc Cơ Mặt</a>
+</li>
+<li class="header-subnav__item">
+<a href="dich-vu-giuong-da-nong.html">Giường Đá Nóng</a>
+</li>
+<li class="header-subnav__item">
+<a href="dich-vu-goi-dau.html">Gội Đầu</a>
+</li>
+<li class="header-subnav__item">
+<a href="dich-vu-ho-tro-vai-co-gay.html">Hỗ Trợ Vai Cổ Gáy</a>
+</li>
+<li class="header-subnav__item">
+<a href="dich-vu-massage-bung.html">Massage Bụng</a>
+</li>
+<li class="header-subnav__item">
+<a href="dich-vu-cham-soc-mat-chuyen-sau.html">Chăm Sóc Mắt Chuyên Sâu</a>
+</li>
+</ul>
+</li>
+<li class="header-nav__item">
+<a class="header-nav__link" href="/blog.html" title="Blog">Blog</a>
+</li>
+<li class="header-nav__item">
+<a class="header-nav__link" href="/hoat-dong.html" title="Hoạt động">Hoạt động</a>
+</li>
+<li class="header-nav__item">
+<a class="header-nav__link" href="/lien-he.html" title="Liên hệ">Liên hệ</a>
+</li>
+</ul>
+<a class="header-nav__link hide-mobile hide-tablet" href="tel:090 638 6941" title="Đặt lịch chăm sóc">
+<button class="header-nav__btn btn primary">
                      Đặt lịch chăm sóc
                   </button>
-               </a>
-            </div>
-            <div class="header-menu__icon hidden">
-               <img class="header-menu_img" src="./assets/images/icons/menu.svg" alt="menu-icon">
-            </div>
-         </div>
-      </header>
-
-      <!-- Banner -->
-      <div class="service-banner">
-         <div class="service-banner-wrapper">
-            <h1 class="service-banner__title">Dịch Vụ</h1>
-         </div>
-      </div>
-
-      <!-- Service Directory -->
-      <div class="service-directory">
-         <div class="container inner-wrapper">
-            <h1 class="title" style="text-align: center; margin-bottom: 40px; color: var(--blue-chill-600);">Danh Sách
+</a>
+</div>
+<div class="header-menu__icon hidden">
+<img alt="menu-icon" class="header-menu_img" src="./assets/images/icons/menu.svg"/>
+</div>
+</div>
+</header>
+<!-- Banner -->
+<div class="service-banner">
+<div class="service-banner-wrapper">
+<h1 class="service-banner__title">Dịch Vụ</h1>
+</div>
+</div>
+<!-- Service Directory -->
+<div class="service-directory">
+<div class="container inner-wrapper">
+<h1 class="title" style="text-align: center; margin-bottom: 40px; color: var(--blue-chill-600);">Danh Sách
                Dịch Vụ</h1>
-            <div class="service-directory__list">
-               <!-- Service 1 -->
-               <div class="service-card">
-                  <div class="service-card__img-wrapper">
-                     <img class="service-card__img" src="./assets/images/services/massage-mat-thu-gian/c---ha.jpg"
-                        onerror="this.src='./assets/images/banner/service-banner.png'" alt="Massage Mặt">
-                  </div>
-                  <div class="service-card__content">
-                     <h3 class="service-card__title">Massage Mặt Thư Giãn</h3>
-                     <p class="service-card__desc">Giúp thư giãn cơ mặt, tăng cường tuần hoàn máu và mang lại làn da
+<div class="service-directory__list">
+<!-- Service 1 -->
+<div class="service-card">
+<div class="service-card__img-wrapper">
+<img alt="Massage Mặt" class="service-card__img" onerror="this.src='./assets/images/banner/service-banner.png'" src="./assets/images/services/massage-mat-thu-gian/c---ha.jpg"/>
+</div>
+<div class="service-card__content">
+<h3 class="service-card__title">Massage Mặt Thư Giãn</h3>
+<p class="service-card__desc">Giúp thư giãn cơ mặt, tăng cường tuần hoàn máu và mang lại làn da
                         tươi trẻ, rạng rỡ.</p>
-                     <a href="dich-vu-massage-mat-thu-gian.html" class="service-card__btn">Xem chi tiết</a>
-                  </div>
-               </div>
-
-               <!-- Service 2 -->
-               <div class="service-card">
-                  <div class="service-card__img-wrapper">
-                     <img class="service-card__img" src="./assets/images/services/nang-co/c---ha.jpg"
-                        onerror="this.src='./assets/images/banner/service-banner.png'" alt="Nâng Cơ">
-                  </div>
-                  <div class="service-card__content">
-                     <h3 class="service-card__title">Nâng Cơ Xóa Nếp Nhăn</h3>
-                     <p class="service-card__desc">Kỹ thuật chuyên sâu giúp nâng cơ, xóa mờ nếp nhăn và trẻ hóa làn da
+<a class="service-card__btn" href="dich-vu-massage-mat-thu-gian.html">Xem chi tiết</a>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="service-card">
+<div class="service-card__img-wrapper">
+<img alt="Nâng Cơ" class="service-card__img" onerror="this.src='./assets/images/banner/service-banner.png'" src="./assets/images/services/nang-co/c---ha.jpg"/>
+</div>
+<div class="service-card__content">
+<h3 class="service-card__title">Nâng Cơ Xóa Nếp Nhăn</h3>
+<p class="service-card__desc">Kỹ thuật chuyên sâu giúp nâng cơ, xóa mờ nếp nhăn và trẻ hóa làn da
                         hiệu quả.</p>
-                     <a href="dich-vu-nang-co.html" class="service-card__btn">Xem chi tiết</a>
-                  </div>
-               </div>
-
-               <!-- Service 3 -->
-               <div class="service-card">
-                  <div class="service-card__img-wrapper">
-                     <img class="service-card__img" src="./assets/images/services/cham-soc-suc-khoe-body/dxn02851.jpg"
-                        onerror="this.src='./assets/images/banner/service-banner.png'" alt="Massage Body">
-                  </div>
-                  <div class="service-card__content">
-                     <h3 class="service-card__title">Chăm Sóc Sức Khỏe Body</h3>
-                     <p class="service-card__desc">Liệu pháp massage toàn thân giúp thư giãn cơ bắp, giải tỏa căng thẳng
+<a class="service-card__btn" href="dich-vu-nang-co.html">Xem chi tiết</a>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="service-card">
+<div class="service-card__img-wrapper">
+<img alt="Massage Body" class="service-card__img" onerror="this.src='./assets/images/banner/service-banner.png'" src="./assets/images/services/cham-soc-suc-khoe-body/dxn02851.jpg"/>
+</div>
+<div class="service-card__content">
+<h3 class="service-card__title">Chăm Sóc Sức Khỏe Body</h3>
+<p class="service-card__desc">Liệu pháp massage toàn thân giúp thư giãn cơ bắp, giải tỏa căng thẳng
                         và phục hồi năng lượng.</p>
-                     <a href="dich-vu-cham-soc-suc-khoe-body.html" class="service-card__btn">Xem chi tiết</a>
-                  </div>
-               </div>
-
-               <!-- Service 4 -->
-               <div class="service-card">
-                  <div class="service-card__img-wrapper">
-                     <img class="service-card__img" src="./assets/images/services/dieu-khac/can-bang.jpg"
-                        onerror="this.src='./assets/images/banner/service-banner.png'" alt="Điêu Khắc">
-                  </div>
-                  <div class="service-card__content">
-                     <h3 class="service-card__title">Điêu Khắc Làn Da</h3>
-                     <p class="service-card__desc">Tạo hình đường nét khuôn mặt thanh thoát, cân đối và thon gọn tự
+<a class="service-card__btn" href="dich-vu-cham-soc-suc-khoe-body.html">Xem chi tiết</a>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="service-card">
+<div class="service-card__img-wrapper">
+<img alt="Điêu Khắc" class="service-card__img" onerror="this.src='./assets/images/banner/service-banner.png'" src="./assets/images/services/dieu-khac/can-bang.jpg"/>
+</div>
+<div class="service-card__content">
+<h3 class="service-card__title">Điêu Khắc Làn Da</h3>
+<p class="service-card__desc">Tạo hình đường nét khuôn mặt thanh thoát, cân đối và thon gọn tự
                         nhiên.</p>
-                     <a href="dich-vu-dieu-khac.html" class="service-card__btn">Xem chi tiết</a>
-                  </div>
-               </div>
-
-               <!-- Service 5 -->
-               <div class="service-card">
-                  <div class="service-card__img-wrapper">
-                     <img class="service-card__img" src="./assets/images/services/thong-tac/c---ha.jpg"
-                        onerror="this.src='./assets/images/banner/service-banner.png'" alt="Thông Tắc">
-                  </div>
-                  <div class="service-card__content">
-                     <h3 class="service-card__title">Thông Tắc Cơ Mặt</h3>
-                     <p class="service-card__desc">Giải tỏa ách tắc, lưu thông khí huyết giúp da mặt hồng hào và khỏe
+<a class="service-card__btn" href="dich-vu-dieu-khac.html">Xem chi tiết</a>
+</div>
+</div>
+<!-- Service 5 -->
+<div class="service-card">
+<div class="service-card__img-wrapper">
+<img alt="Thông Tắc" class="service-card__img" onerror="this.src='./assets/images/banner/service-banner.png'" src="./assets/images/services/thong-tac/c---ha.jpg"/>
+</div>
+<div class="service-card__content">
+<h3 class="service-card__title">Thông Tắc Cơ Mặt</h3>
+<p class="service-card__desc">Giải tỏa ách tắc, lưu thông khí huyết giúp da mặt hồng hào và khỏe
                         mạnh.</p>
-                     <a href="dich-vu-thong-tac.html" class="service-card__btn">Xem chi tiết</a>
-                  </div>
-               </div>
-
-               <!-- Service 6 -->
-               <div class="service-card">
-                  <div class="service-card__img-wrapper">
-                     <img class="service-card__img" src="./assets/images/services/giuong-da-nong/dxn02850.jpg"
-                        onerror="this.src='./assets/images/banner/service-banner.png'" alt="Giường Đá Nóng">
-                  </div>
-                  <div class="service-card__content">
-                     <h3 class="service-card__title">Giường Đá Nóng</h3>
-                     <p class="service-card__desc">Thư giãn sâu với nhiệt lượng từ đá nóng, hỗ trợ thải độc và cải thiện
+<a class="service-card__btn" href="dich-vu-thong-tac.html">Xem chi tiết</a>
+</div>
+</div>
+<!-- Service 6 -->
+<div class="service-card">
+<div class="service-card__img-wrapper">
+<img alt="Giường Đá Nóng" class="service-card__img" onerror="this.src='./assets/images/banner/service-banner.png'" src="./assets/images/services/giuong-da-nong/dxn02850.jpg"/>
+</div>
+<div class="service-card__content">
+<h3 class="service-card__title">Giường Đá Nóng</h3>
+<p class="service-card__desc">Thư giãn sâu với nhiệt lượng từ đá nóng, hỗ trợ thải độc và cải thiện
                         giấc ngủ.</p>
-                     <a href="dich-vu-giuong-da-nong.html" class="service-card__btn">Xem chi tiết</a>
-                  </div>
-               </div>
-
-               <!-- Service 7 -->
-               <div class="service-card">
-                  <div class="service-card__img-wrapper">
-                     <img class="service-card__img" src="./assets/images/services/goi-dau/dung-dau-goi-phu-hop-1.jpg"
-                        onerror="this.src='./assets/images/banner/service-banner.png'" alt="Gội Đầu">
-                  </div>
-                  <div class="service-card__content">
-                     <h3 class="service-card__title">Gội Đầu Thảo Dược</h3>
-                     <p class="service-card__desc">Làm sạch và nuôi dưỡng tóc với thảo dược thiên nhiên, mang lại cảm
+<a class="service-card__btn" href="dich-vu-giuong-da-nong.html">Xem chi tiết</a>
+</div>
+</div>
+<!-- Service 7 -->
+<div class="service-card">
+<div class="service-card__img-wrapper">
+<img alt="Gội Đầu" class="service-card__img" onerror="this.src='./assets/images/banner/service-banner.png'" src="./assets/images/services/goi-dau/dung-dau-goi-phu-hop-1.jpg"/>
+</div>
+<div class="service-card__content">
+<h3 class="service-card__title">Gội Đầu Thảo Dược</h3>
+<p class="service-card__desc">Làm sạch và nuôi dưỡng tóc với thảo dược thiên nhiên, mang lại cảm
                         giác thư thái tuyệt vời.</p>
-                     <a href="dich-vu-goi-dau.html" class="service-card__btn">Xem chi tiết</a>
-                  </div>
-               </div>
-
-               <!-- Service 8 -->
-               <div class="service-card">
-                  <div class="service-card__img-wrapper">
-                     <img class="service-card__img" src="./assets/images/services/ho-tro-vai-co-gay/dxn02858.jpg"
-                        onerror="this.src='./assets/images/banner/service-banner.png'" alt="Vai Cổ Gáy">
-                  </div>
-                  <div class="service-card__content">
-                     <h3 class="service-card__title">Hỗ Trợ Vai Cổ Gáy</h3>
-                     <p class="service-card__desc">Giảm đau nhức vai gáy, cải thiện vận động và xua tan mệt mỏi văn
+<a class="service-card__btn" href="dich-vu-goi-dau.html">Xem chi tiết</a>
+</div>
+</div>
+<!-- Service 8 -->
+<div class="service-card">
+<div class="service-card__img-wrapper">
+<img alt="Vai Cổ Gáy" class="service-card__img" onerror="this.src='./assets/images/banner/service-banner.png'" src="./assets/images/services/ho-tro-vai-co-gay/dxn02858.jpg"/>
+</div>
+<div class="service-card__content">
+<h3 class="service-card__title">Hỗ Trợ Vai Cổ Gáy</h3>
+<p class="service-card__desc">Giảm đau nhức vai gáy, cải thiện vận động và xua tan mệt mỏi văn
                         phòng.</p>
-                     <a href="dich-vu-ho-tro-vai-co-gay.html" class="service-card__btn">Xem chi tiết</a>
-                  </div>
-               </div>
-
-               <!-- Service 9 -->
-               <div class="service-card">
-                  <div class="service-card__img-wrapper">
-                     <img class="service-card__img" src="./assets/images/services/massage-bung/dxn02814.jpg"
-                        onerror="this.src='./assets/images/banner/service-banner.png'" alt="Massage Bụng">
-                  </div>
-                  <div class="service-card__content">
-                     <h3 class="service-card__title">Massage Bụng</h3>
-                     <p class="service-card__desc">Đánh tan mỡ thừa, săn chắc vòng eo và hỗ trợ tiêu hóa tốt hơn.</p>
-                     <a href="dich-vu-massage-bung.html" class="service-card__btn">Xem chi tiết</a>
-                  </div>
-               </div>
-
-               <!-- Service 10 -->
-               <div class="service-card">
-                  <div class="service-card__img-wrapper">
-                     <img class="service-card__img"
-                        src="./assets/images/services/cham-soc-mat-chuyen-sau/cham-soc-mat-1.jpg"
-                        onerror="this.src='./assets/images/banner/service-banner.png'" alt="Chăm Sóc Mắt">
-                  </div>
-                  <div class="service-card__content">
-                     <h3 class="service-card__title">Chăm Sóc Mắt Chuyên Sâu</h3>
-                     <p class="service-card__desc">Giảm quầng thâm, bọng mắt và xóa mờ nếp nhăn vùng mắt, cho đôi mắt
+<a class="service-card__btn" href="dich-vu-ho-tro-vai-co-gay.html">Xem chi tiết</a>
+</div>
+</div>
+<!-- Service 9 -->
+<div class="service-card">
+<div class="service-card__img-wrapper">
+<img alt="Massage Bụng" class="service-card__img" onerror="this.src='./assets/images/banner/service-banner.png'" src="./assets/images/services/massage-bung/dxn02814.jpg"/>
+</div>
+<div class="service-card__content">
+<h3 class="service-card__title">Massage Bụng</h3>
+<p class="service-card__desc">Đánh tan mỡ thừa, săn chắc vòng eo và hỗ trợ tiêu hóa tốt hơn.</p>
+<a class="service-card__btn" href="dich-vu-massage-bung.html">Xem chi tiết</a>
+</div>
+</div>
+<!-- Service 10 -->
+<div class="service-card">
+<div class="service-card__img-wrapper">
+<img alt="Chăm Sóc Mắt" class="service-card__img" onerror="this.src='./assets/images/banner/service-banner.png'" src="./assets/images/services/cham-soc-mat-chuyen-sau/cham-soc-mat-1.jpg"/>
+</div>
+<div class="service-card__content">
+<h3 class="service-card__title">Chăm Sóc Mắt Chuyên Sâu</h3>
+<p class="service-card__desc">Giảm quầng thâm, bọng mắt và xóa mờ nếp nhăn vùng mắt, cho đôi mắt
                         sáng khỏe.</p>
-                     <a href="dich-vu-cham-soc-mat-chuyen-sau.html" class="service-card__btn">Xem chi tiết</a>
-                  </div>
-               </div>
-
-            </div>
-         </div>
-      </div>
-
-
-      <!-- Footer -->
-      <footer class="footer">
-         <div class="container footer-wrapper">
-            <ul class="footer-content">
-               <ul class="footer-list">
-                  <div class="grid wide">
-                     <ul class="row">
-                        <li class="footer-item col l-3 m-4 c-12">
-                           <div class="footer-item__img">
-                              <img class="tyd-footer-logo" src="./assets/images/logo/logo-footer.png" alt="">
-                           </div>
-                           <ul class="social-list">
-                              <li class="social-item">
-                                 <a href="https://www.facebook.com/TAMYDUNG.WIT" target="_blank">
-                                    <img src="./assets/images/logo/facebook.svg" alt="Facebook">
-                                 </a>
-                              </li>
-                              <li class="social-item">
-                                 <a href="http://youtube.com/@tamydung" target="_blank">
-                                    <img src="./assets/images/logo/youtube.svg" alt="Youtube">
-                                 </a>
-                              </li>
-                              <li class="social-item">
-                                 <a href="https://www.tiktok.com/@tamydung.official/" target="_blank">
-                                    <img src="./assets/images/logo/tiktok.png" alt="Tiktok" style="width: 20px; height: 20px; object-fit: contain;">
-                                 </a>
-                              </li>
-                              <li class="social-item">
-                                 <a href="https://t.me/tamydung" target="_blank">
-                                    <img src="./assets/images/logo/telegram.png" alt="Telegram" style="width: 20px; height: 20px; object-fit: contain;">
-                                 </a>
-                              </li>
-                           </ul>
-                           <p class="footer-copyright">©2024 Tâm Y Dung</p>
-                        </li>
-                        <li class="footer-item col l-3 m-4 c-12">
-                           <ul class="site-list">
-                              <li class="site-item"><a href="/">Home</a></li>
-                              <li class="site-item"><a href="/dich-vu.html">Dịch vụ</a></li>
-                              <li class="site-item"><a href="/blog.html">Blog</a></li>
-                              <li class="site-item"><a href="/hoat-dong.html">Hoạt động</a></li>
-                                        <li class="site-item"><a href="/khoa-hoc.html">Khóa học</a></li>
-                           </ul>
-                        </li>
-                        <li class="footer-item col l-3 m-4 c-12">
-                           <p class="footer-contact">Liên hệ</p>
-                           <div class="footer-branch">
-                              <p class="footer-branch__title">TYD Thành Thái <br /> Trung tâm đào tạo</p>
-                              <p class="footer-branch__address">152/14 Thành Thái, P.12, Q. 10, TpHCM</p>
-                              <p class="footer-branch__hotline">Hotline: <a href="tel:090 638 6941">090 638 6941</a></p>
-                           </div>
-                        </li>
-                        <li class="footer-item col l-3 m-4 c-12">
-                           <div class="footer-branch">
-                              <p class="footer-branch__title">TYD Thủ Dầu Một</p>
-                              <p class="footer-branch__address">TRUNG TÂM THỂ CHẤT THÀNH PHỐ MỚI BÌNH DƯƠNG <br> Công
+<a class="service-card__btn" href="dich-vu-cham-soc-mat-chuyen-sau.html">Xem chi tiết</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+<div class="container footer-wrapper">
+<ul class="footer-content">
+<ul class="footer-list">
+<div class="grid wide">
+<ul class="row">
+<li class="footer-item col l-3 m-4 c-12">
+<div class="footer-item__img">
+<img alt="" class="tyd-footer-logo" src="./assets/images/logo/logo-footer.png"/>
+</div>
+<ul class="social-list">
+<li class="social-item">
+<a href="https://www.facebook.com/TAMYDUNG.WIT" target="_blank">
+<img alt="Facebook" src="./assets/images/logo/facebook.svg"/>
+</a>
+</li>
+<li class="social-item">
+<a href="http://youtube.com/@tamydung" target="_blank">
+<img alt="Youtube" src="./assets/images/logo/youtube.svg"/>
+</a>
+</li>
+<li class="social-item">
+<a href="https://www.tiktok.com/@tamydung.official/" target="_blank">
+<img alt="Tiktok" src="./assets/images/logo/tiktok.png" style="width: 20px; height: 20px; object-fit: contain;"/>
+</a>
+</li>
+<li class="social-item">
+<a href="https://t.me/tamydung" target="_blank">
+<img alt="Telegram" src="./assets/images/logo/telegram.png" style="width: 20px; height: 20px; object-fit: contain;"/>
+</a>
+</li>
+</ul>
+<p class="footer-copyright">©2024 Tâm Y Dung</p>
+</li>
+<li class="footer-item col l-3 m-4 c-12">
+<ul class="site-list">
+<li class="site-item"><a href="/">Home</a></li>
+<li class="site-item"><a href="/dich-vu.html">Dịch vụ</a></li>
+<li class="site-item"><a href="/blog.html">Blog</a></li>
+<li class="site-item"><a href="/hoat-dong.html">Hoạt động</a></li>
+<li class="site-item"><a href="/khoa-hoc.html">Khóa học</a></li>
+</ul>
+</li>
+<li class="footer-item col l-3 m-4 c-12">
+<p class="footer-contact">Liên hệ</p>
+<div class="footer-branch">
+<p class="footer-branch__title">TYD Thành Thái <br/> Trung tâm đào tạo</p>
+<p class="footer-branch__address">152/14 Thành Thái, P.12, Q. 10, TpHCM</p>
+<p class="footer-branch__hotline">Hotline: <a href="tel:090 638 6941">090 638 6941</a></p>
+</div>
+</li>
+<li class="footer-item col l-3 m-4 c-12">
+<div class="footer-branch">
+<p class="footer-branch__title">TYD Thủ Dầu Một</p>
+<p class="footer-branch__address">TRUNG TÂM THỂ CHẤT THÀNH PHỐ MỚI BÌNH DƯƠNG <br/> Công
                                  viên Thành phố mới, Hùng Vương, P.Hoà Phú, Thủ Dầu Một, Bình Dương</p>
-                              <p class="footer-branch__hotline">Hotline: <a href="tel:090 638 6941">090 638 6941</a>
-                              </p>
-                           </div>
-                           <p class="footer-copyright-mb">©2024 Tâm Y Dung</p>
-                        </li>
-                     </ul>
-                  </div>
-               </ul>
-            </ul>
-         </div>
-      </footer>
-
-   </div>
-
-   <script src="./assets/js/swiper/swiper.min.js"></script>
-   <script src="./assets/js/main.js"></script>
+<p class="footer-branch__hotline">Hotline: <a href="tel:090 638 6941">090 638 6941</a>
+</p>
+</div>
+<p class="footer-copyright-mb">©2024 Tâm Y Dung</p>
+</li>
+</ul>
+</div>
+</ul>
+</ul>
+</div>
+</footer>
+</div>
+<script src="./assets/js/swiper/swiper.min.js"></script>
+<script src="./assets/js/main.js"></script>
 </body>
-
 </html>
