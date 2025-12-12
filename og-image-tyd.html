@@ -31,7 +31,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            /* Changed from center to allow space-between in content */
+            padding: 50px;
             position: relative;
             color: white;
             overflow: hidden;
@@ -69,15 +70,18 @@
             z-index: 10;
             text-align: center;
             width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .logo-area {
-            margin-bottom: 20px;
+            /* flex item */
         }
 
         .main-logo {
             height: 140px;
-            /* Assuming logo is dark, invert to make it white */
             filter: brightness(0) invert(1);
         }
 
@@ -90,8 +94,9 @@
             background: linear-gradient(90deg, #fff, var(--blue-chill-500));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 50px;
             text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 0;
+            /* Let flex gap handle spacing or space-between */
         }
 
         .divider {
@@ -99,7 +104,7 @@
             height: 4px;
             background: var(--blue-chill-500);
             border-radius: 2px;
-            margin: 0 auto 40px;
+            margin: 0 auto;
         }
 
         .description-box {
