@@ -1070,6 +1070,9 @@
 
 .action-content__right .action-content__img {
   border-radius: 15px;
+  flex-shrink: 0;
+  width: 250px;
+  height: auto;
 }
 
 .action-content__left .action-name {
@@ -1340,4 +1343,12 @@
   .service-directory__list {
     grid-template-columns: 1fr;
   }
+}
+
+/* vu */
+img.action-content__img {
+  /* object-fit: contain; */
+  /* width: 250px; */
+  height: auto;
+  max-height: max-content;
 }
