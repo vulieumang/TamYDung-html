@@ -1,10 +1,48 @@
 @keyframes slideBottom {
-   0% {
-     -webkit-transform: translateY(100vh);
-             transform: translateY(100vh);
-   }
-   100% {
-     -webkit-transform: translateY(0);
-             transform: translateY(0);
-   }
- }
+  0% {
+    -webkit-transform: translateY(100vh);
+    transform: translateY(100vh);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* Light Sweep Effect (Left to Right) */
+@keyframes lightSweep {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Shine Move (Physical Element Sweep) */
+@keyframes shineMove {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 200%;
+  }
+}
+
+/* Sparkle / Gleam Effect */
+@keyframes gleam {
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}

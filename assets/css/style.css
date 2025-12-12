@@ -51,6 +51,28 @@
   color: var(--text-black);
 }
 
+/* Logo Shine */
+.logo-tyd {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  /* Ensure alignment */
+}
+
+.logo-tyd::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.8) 50%, transparent 100%);
+  transform: skewX(-25deg);
+  animation: shineMove 5s infinite;
+  pointer-events: none;
+}
+
 /* end Header */
 
 /* Banner */
@@ -71,12 +93,20 @@
   margin-top: 55px;
 }
 
+/* Banner Title Shine */
 .banner-wrapper .banner-title {
   position: absolute;
   color: var(--blue-chill-600);
   font-size: 56px;
   line-height: 64px;
   font-weight: normal;
+
+  /* Light Sweep Effect (White Shine) */
+  background: linear-gradient(to right, var(--blue-chill-600) 0%, var(--blue-chill-600) 45%, #ffffff 50%, var(--blue-chill-600) 55%, var(--blue-chill-600) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: lightSweep 3s linear infinite;
 }
 
 .banner-wrapper .banner-title.banner-title__left {
@@ -90,6 +120,28 @@
   font-family: "Roslindale Variable Display", sans-serif;
   right: 155px;
   top: 485px;
+}
+
+/* Banner Image Shine Overlay */
+.banner-wrapper {
+  position: relative;
+  overflow: hidden;
+  /* Ensure shine doesn't spill */
+}
+
+.banner-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Diagonal light beam */
+  background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.4) 50%, transparent 100%);
+  transform: skewX(-25deg) translateX(-150%);
+  z-index: 10;
+  pointer-events: none;
+  animation: lightSweep 6s infinite;
 }
 
 /* end Banner */
