@@ -14,6 +14,13 @@ OG_IMAGE_OVERRIDES = {
     'blog.html': './assets/images/og-image.jpg',
 }
 
+DESCRIPTION_OVERRIDES = {
+    'index.html': "Tâm Y Dung là giải pháp, là trung tâm chăm sóc sức khoẻ và sắc đẹp dựa trên nền tảng của y học và tâm thức. Chăm sóc cho con người Tâm, Trí, Thân, Nhan.",
+    'lien-he.html': "Liên hệ với Tâm Y Dung để được tư vấn và chăm sóc sức khỏe, sắc đẹp toàn diện.",
+    'hoat-dong.html': "Các hoạt động nổi bật của Tâm Y Dung.",
+    'blog.html': "Chia sẻ kiến thức về sức khỏe và sắc đẹp từ Tâm Y Dung.",
+}
+
 def get_html_files(root_dir):
     html_files = []
     for root, dirs, files in os.walk(root_dir):
@@ -107,10 +114,24 @@ def process_file(file_path):
 
     # --- Description ---
     description = None
-    # Try meta description first
-    meta_desc = soup.find('meta', attrs={'name': 'description'})
-    if meta_desc and meta_desc.get('content'):
-        description = meta_desc['content']
+    
+    # 0. Override
+    if filename in DESCRIPTION_OVERRIDES:
+        description = DESCRIPTION_OVERRIDES[filename]
+    
+    # 1. Priority: service-intro class (Service Pages)
+    if not description:
+        p_intro = soup.find('p', class_='service-intro')
+        if p_intro:
+            description = p_intro.get_text().strip()
+
+    # 2. Meta description
+    if not description:
+        meta_desc = soup.find('meta', attrs={'name': 'description'})
+        if meta_desc and meta_desc.get('content'):
+            description = meta_desc['content']
+    
+    # 3. Content right desc (Service Details)
     
     # If no meta desc, find first paragraph in content
     if not description:
@@ -137,6 +158,11 @@ def process_file(file_path):
     # Truncate description
     if len(description) > 200:
         description = description[:197] + "..."
+        
+    # Clean up whitespace (newlines, extra spaces)
+    description = " ".join(description.split())
+    if title:
+        title = " ".join(title.split())
 
     # --- Image ---
     image = determine_og_image(filename, soup, file_path)
