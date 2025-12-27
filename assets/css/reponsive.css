@@ -93,6 +93,11 @@
     color: var(--white);
   }
 
+  .header-nav__btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
   /* end Header */
 
   /* Banner */
@@ -119,6 +124,7 @@
     top: 430px;
     right: 0;
   }
+
   /* end Banner */
 
   /* Introduce */
@@ -146,6 +152,7 @@
   .introduce-wrapper .introduce-img {
     max-width: 110px;
   }
+
   /* end Introduce */
 }
 
@@ -239,6 +246,11 @@
     color: var(--white);
   }
 
+  .header-nav__btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
   /* end Header */
 
   /* Banner */
@@ -293,6 +305,7 @@
   .introduce-wrapper .introduce-img {
     max-width: 110px;
   }
+
   /* end Introduce */
 
   /* Carosel */
@@ -366,6 +379,7 @@
   .carosel-wrapper .swiper__button-prev {
     display: none;
   }
+
   /* end Carosel */
 
   /* Video slider */
@@ -465,6 +479,7 @@
     color: var(--text-gray);
     font-size: 12px;
   }
+
   /* end video slider */
 
   /* Video slider thumbs */
@@ -554,6 +569,7 @@
   .carosel-wrapper .thumb-swiper-button__prev {
     display: none;
   }
+
   /* end Video slider thumbs */
 
   /* Branch */
@@ -666,6 +682,7 @@
     font-size: 12px;
     color: var(--blue-chill-50) !important;
   }
+
   /* end Branch */
 
   /* Blog */
@@ -755,19 +772,23 @@
   .footer {
     margin-top: 160px;
   }
+
   .footer-item .site-list,
   .footer-item .footer-contact,
   .footer-item .site-item,
   .footer-item .footer-copyright {
     display: none;
   }
+
   .footer-branch {
     margin-bottom: 20px;
   }
+
   .footer-item .footer-copyright-mb {
     display: block;
     margin: 20px 0;
   }
+
   /* end Footer */
 
   /* Service */
@@ -805,6 +826,7 @@
     font-size: 32px;
     line-height: 38px;
   }
+
   /* end Banner */
 
   /* Tabs */
@@ -847,6 +869,7 @@
     font-size: 20px;
     line-height: 24px;
   }
+
   /* end Tabs */
 
   /* Bookings */
@@ -879,6 +902,7 @@
     font-size: 18px;
     font-weight: 400;
   }
+
   /* end Bookings */
 
   /* Carosel */
@@ -926,9 +950,11 @@
     margin-top: 65px;
     margin-bottom: 25px;
   }
+
   .recommend-list .recommend-item {
     margin-bottom: 32px;
   }
+
   /* end Recommend */
 
   /* end Blog */
@@ -969,6 +995,7 @@
   .action-content__left .action-desc {
     font-size: 14px;
   }
+
   /* end Actions */
 
   /* Contact */
@@ -1036,14 +1063,16 @@
 
   /* Navbar */
   .subnav-item__list,
-  .header-nav__item:hover > .header-subnav__list {
+  .header-nav__item:hover>.header-subnav__list {
     display: none;
   }
+
   /* end Navbar */
 
   /* Video Carosel Modal */
   .video-carosel__modal.active {
     padding: 0 16px;
   }
+
   /* end Video Carosel Modal */
 }
