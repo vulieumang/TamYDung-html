@@ -1,0 +1,7 @@
+# Điều hướng trang lỗi
+ErrorDocument 404 /404.html
+
+# Technical SEO: Chặn index trang 404 ở mức Header
+<IfModule mod_headers.c>
+    Header set X-Robots-Tag "noindex, follow"
+</IfModule>
